@@ -1,5 +1,7 @@
 import React, {useEffect} from 'react';
-import './App.css';
+import './styles/App.scss';
+import LangageSelector from "./components/LangageSelector";
+import {useTranslation} from "react-i18next";
 
 function App() {
     useEffect(() => {
@@ -29,60 +31,120 @@ function App() {
                 link.removeEventListener('click', handleSmoothScroll as unknown as EventListener);
             });
         };
+
+
     }, []);
+
+    /* Fonction d'appel aux bases de langages */
+    const {t} = useTranslation();
 
     return (
         <div className="App">
 
             <div className="navbar">
-                <a href="#accueil">Accueil</a>
-                <a href="#presentation">À Propos</a>
-                <a href="#etudes">Parcours Scolaire</a>
-                <a href="#parcoursPro">Expériences professionnelles</a>
-                <a href="#competences">Compétences</a>
+                <a href="#accueil">{t('accueil_libelle')}</a>
+                <a href="#presentation">{t('a_propos_libelle')}</a>
+                <a href="#etudes">{t('parcours_scolaire_libelle')}</a>
+                <a href="#parcoursPro">{t('experience_pro_libelle')}</a>
+                <a href="#competences">{t('competences_libelle')}</a>
+                <LangageSelector/>
             </div>
 
             <div className="content">
                 <section id="accueil" className="accueil">
                     <div className="image-container">
                         <img
-                            src="/photo_baptie.jpeg" // Assurez-vous de spécifier le chemin correct vers votre image
+                            src="/photo_baptie.jpeg"
                             alt="Baptiste PP"
                             className="rounded-image"
                         />
                     </div>
                     <div className="intitulé">
                         <p className="nom"> Baptiste CARON</p>
-                        <p className="poste"> Ingénieur Logiciel </p>
+                        <p className="poste">{t('poste')}</p>
                     </div>
                 </section>
+
                 <section id="presentation" className="presentation">
-                    <h1 className="sectionTitle">À Propos</h1>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <div className="illustration">
+                        <img src="/to_fill.png" alt="to_fill"/>
+                    </div>
+
+                    <div className="texteSection">
+                        <h1 className="sectionTitle">{t('a_propos_libelle')}</h1>
+                        <p>{t('presentation')}</p>
+                    </div>
+
                 </section>
 
                 <section id="etudes" className="etudes">
-                    <h1 className="sectionTitle">Parcours Scolaire</h1>
-                    <p>Contenu de la section 2.</p>
+                    <div className="texteSection">
+                        <h1 className="sectionTitle">{t('parcours_scolaire_libelle')}</h1>
+                        <ul>
+                            <li>
+                                <label>{t('univ')}</label>
+                                <ul>
+                                    <li>{t('licence')}</li>
+                                    <li>{t('master')}</li>
+                                </ul>
+                            </li>
+
+                            <li>{t('bac')}</li>
+                        </ul>
+                    </div>
+                    <div className="illustration">
+                        <img src="/to_fill.png" alt="to_fill"/>
+                    </div>
+
                 </section>
 
                 <section id="parcoursPro" className="parcoursPro">
-                    <h1 className="sectionTitle">Expérience Professionnelle</h1>
-                    <p>Contenu de la section 3.</p>
+                    <div className="illustration">
+                        <img src="/to_fill.png" alt="to_fill"/>
+                    </div>
+
+                    <div className="texteSection">
+                        <h1 className="sectionTitle">{t('experience_pro_libelle')}</h1>
+                        <ul>
+                            <li>
+                                <label>{t('sopra')}</label>
+                                <ul>
+                                    <li>{t('alt')}</li>
+                                    <li>{t('dev')}</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </section>
 
                 <section id="competences" className="competences">
-                    <h1 className="sectionTitle">Compétences</h1>
-                    <p>Contenu de la section 3.</p>
+                    <div className="texteSection">
+                        <h1 className="sectionTitle">{t('competences_libelle')}</h1>
+                        <ul>
+                            <li>{t('langagesProg')}</li>
+                            <li>{t('frameworkProg')}</li>
+                        </ul>
+                    </div>
+                    <div className="illustration">
+                        <img src="/to_fill.png" alt="to_fill"/>
+                    </div>
+
                 </section>
 
                 <section id="hobbies" className="hobbies">
-                    <h1 className="sectionTitle">Hobbies</h1>
-                    <p>Contenu de la section 3.</p>
+                    <div className="illustration">
+                        <img src="/to_fill.png" alt="to_fill"/>
+                    </div>
+
+                    <div className="texteSection">
+                        <h1 className="sectionTitle">{t('hobbies_libelle')}</h1>
+                        <ul>
+                            <li>{t('volley')}</li>
+                            <li>{t('astronomie')}</li>
+                            <li>{t('jeux_videos')}</li>
+                        </ul>
+                    </div>
+
                 </section>
             </div>
         </div>
