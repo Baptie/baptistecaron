@@ -1,18 +1,11 @@
-:root {
-    --black: #131313;
-    --dark-gray: #292929;
-    --gray: #424242;
-    --light-gray: #686868;
-    --white: #FAFAFA;
-    --orange: #e37d0a;
+@import "Variables";
 
-    /* Dégradés */
-    --gray-70: rgb(66, 66, 66, 0.7)
-}
+$main_color: $black;
+$main_fonts_color: $white;
+$secondary_font_color: green;
 .App {
     text-align: center;
-    background-color: var(--gray);
-    font-family: "Apple Braille";
+    background-color: $main_color;
 }
 
 .App-logo {
@@ -44,8 +37,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--gray);
-    font-family: Arial, sans-serif;
+    background-color: $main_color;
+    font-family: Cabinetgrotesk variable, sans-serif;
 }
 
 .content {
@@ -56,7 +49,8 @@ body {
     margin-top: 0px;
     overflow: hidden;
     position: fixed;
-    background: linear-gradient(to bottom, var(--gray) 70%, var(--gray-70));
+    background-color: rgb($black, 0.5);
+    backdrop-filter: blur(5px);
     width: 100%;
     height: 70px;
     top: 0;
@@ -64,6 +58,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .langSelectDiv {
+        position: absolute;
+        right: 40px;
+    }
 }
 
 .navbar a {
@@ -72,10 +71,11 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none; /* Supprime le soulignement par défaut */
-    color: var(--white);
+    color: $white;
     transition: border-bottom 0.3s ease; /* Transition pour l'effet de soulignement */
     font-weight: bold;
     position: relative;
+
 }
 
 .navbar a:hover::after {
@@ -96,19 +96,41 @@ body {
 }
 
 section:not(.accueil) {
-    padding: 100px 300px;
+    padding: 100px 150px;
     text-align: left;
-
+    color: $black;
+    background-color: $white;
+    margin-bottom: 50px;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 0px $orange;
 }
 
+.accueil {
+    color: $main_fonts_color;
+}
 section {
+
+
 }
 
 .sectionTitle {
-    color: #e1dad2;
-    border-left: 4px solid #e1dad2;
+    color: $black;
+    border-left: 4px solid $orange;
     padding: 3px;
     padding-left: 10px;
+}
+
+.texteSection {
+
+}
+
+.texteSection {
+
+
 }
 
 .etudes {
@@ -120,7 +142,7 @@ section {
 .image-container {
 
     display: inline-block;
-    border: 2px solid #e1dad2;
+    border: 2px solid $white;
     border-radius: 50%;
     overflow: hidden;
     margin: 20px auto; /* Ajustez la marge selon vos préférences */
@@ -131,21 +153,22 @@ section {
     height: 200px; /* Ajustez la taille de l'image selon vos préférences */
     border-radius: 50%;
     object-fit: cover; /* Garantit que l'image remplit le cercle */
+    transform: scale3d(1, 1, 1);
 
 }
 
 .rounded-image:hover {
-    transform: scale(1.05);
+    transform: scale3d(1.1, 1.1, 1);
     transition: 0.2s
 }
 
 .nom {
-    color: var(--white);
+    color: $main_fonts_color;
     font-size: xx-large;
     font-weight: bold;
 }
 
 .poste {
-    color: var(--white);
+    color: $main_fonts_color;
     font-size: medium;
 }
