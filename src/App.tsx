@@ -4,6 +4,7 @@ import './styles/Effects.scss';
 import LangageSelector from "./components/LangageSelector";
 import {useTranslation} from "react-i18next";
 import Footer from "./components/Footer";
+import Hobbies from "./components/Hobbies";
 
 function App() {
     useEffect(() => {
@@ -129,15 +130,7 @@ function App() {
                     </div>
                 </section>
 
-                <section id="hobbies" className="hobbies">
-                    <div className="texteSection">
-                        <h1 className="sectionTitle">{t('hobbies_libelle')}</h1>
-                        <div className="bloc">{t('volley')}</div>
-                        <div className="bloc">{t('astronomie')}</div>
-                        <div className="bloc">{t('jeux_videos')}</div>
-                    </div>
-
-                </section>
+                <Hobbies/>
             </div>
             <div className="framer-bot"></div>
             <Footer/>
