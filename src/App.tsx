@@ -3,6 +3,7 @@ import './styles/App.scss';
 import './styles/Effects.scss';
 import LangageSelector from "./components/LangageSelector";
 import {useTranslation} from "react-i18next";
+import Footer from "./components/Footer";
 
 function App() {
     useEffect(() => {
@@ -50,9 +51,7 @@ function App() {
 
     return (
         <div className="App">
-
-
-            <header className="framer" data-framer-name="Header"></header>
+            <header className="framer-top"></header>
             <div className="navbar">
                 <a href="#accueil">{t('accueil_libelle')}</a>
                 <a href="#presentation">{t('a_propos_libelle')}</a>
@@ -140,6 +139,8 @@ function App() {
 
                 </section>
             </div>
+            <div className="framer-bot"></div>
+            <Footer/>
         </div>
     );
 }

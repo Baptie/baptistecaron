@@ -1,4 +1,6 @@
-.framer {
+@import "Variables";
+
+.framer-top {
   align-content: center;
   align-items: center;
   background: radial-gradient(80.10000000000001% 50% at 50% 0%, rgba(38, 140, 245, .25) 0%, rgba(38, 140, 245, 0) 100%);
@@ -15,4 +17,23 @@
   top: 0;
   position: absolute;
   width: 100%;
+}
+
+.framer-bot {
+  align-content: center;
+  align-items: center;
+  background: radial-gradient(80.10000000000001% 50% at 50% 100%, rgba($violet, .25) 0%, rgba($violet, 0) 100%);
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: 90vh;
+  justify-content: center;
+  min-height: 648px;
+  overflow: visible;
+  padding: 0;
+  position: static;
+  width: 100%;
+  z-index: 0;
 }
