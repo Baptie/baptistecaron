@@ -5,7 +5,6 @@ $main_fonts_color: $white;
 $secondary_font_color: green;
 .App {
     text-align: center;
-    background-color: $main_color;
 }
 
 .App-logo {
@@ -37,7 +36,7 @@ $secondary_font_color: green;
 body {
     margin: 0;
     padding: 0;
-    background-color: $main_color;
+    background: #040615;
     font-family: Cabinetgrotesk variable, sans-serif;
 }
 
@@ -49,8 +48,7 @@ body {
     margin-top: 0px;
     overflow: hidden;
     position: fixed;
-    background-color: rgb($black, 0.5);
-    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0);
     width: 100%;
     height: 70px;
     top: 0;
@@ -58,6 +56,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
+    // Effet de transition transparent -> flou
+    transition: background-color 0.3s ease-in-out;
+    backdrop-filter: blur(10px); /* Effet de flou pour le fond */
+    -webkit-backdrop-filter: blur(10px); /* Effet de flou pour le fond (compatibilité avec Safari) */
+
 
     .langSelectDiv {
         position: absolute;
@@ -75,6 +79,7 @@ body {
     transition: border-bottom 0.3s ease; /* Transition pour l'effet de soulignement */
     font-weight: bold;
     position: relative;
+
 
 }
 
@@ -96,21 +101,36 @@ body {
 }
 
 section:not(.accueil) {
-    padding: 100px 150px;
+
+}
+
+.bloc {
+    padding: 10px;
+    margin: 10px;
     text-align: left;
-    color: $black;
-    background-color: $white;
-    margin-bottom: 50px;
-    width: 50%;
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
+    color: $white;
+    background-color: rgba($darkblue, 0.2);
+
+    display: inline-block;
     border-radius: 10px;
-    box-shadow: 5px 5px 3px 0px $orange;
+    box-shadow: 5px 3px 10px 3px rgba($white, 0.05);
+    border: 0.5px #0c232e solid;
+    width: 25%;
+
+    font-size: 20px;
+
+}
+
+.texte {
+    color: white;
+    margin: 100px;
+    text-align: left;
+    font-size: 25px;
 }
 
 .accueil {
-    color: $main_fonts_color;
+    top: 0;
+    height: 100vh;
 }
 section {
 
@@ -118,10 +138,12 @@ section {
 }
 
 .sectionTitle {
-    color: $black;
-    border-left: 4px solid $orange;
-    padding: 3px;
-    padding-left: 10px;
+    font-size: 40px;
+    font-family: "Inter-Bold", "Inter", "Inter Placeholder", sans-serif;
+    background-image: linear-gradient(97deg, rgb(255, 255, 255) 0%, rgb(127, 182, 213) 100%); /* Dégradé de couleur */
+    -webkit-background-clip: text; /* Permet au texte d'être rempli avec le dégradé */
+    background-clip: text; /* Permet au texte d'être rempli avec le dégradé */
+    color: transparent; /* Rend le texte transparent pour afficher le dégradé en arrière-plan */
 }
 
 .texteSection {
@@ -163,12 +185,17 @@ section {
 }
 
 .nom {
-    color: $main_fonts_color;
-    font-size: xx-large;
-    font-weight: bold;
+    font-family: "Inter-Bold", "Inter", "Inter Placeholder", sans-serif;
+    background-image: linear-gradient(97deg, rgb(255, 255, 255) 0%, rgb(127, 182, 213) 100%); /* Dégradé de couleur */
+    -webkit-background-clip: text; /* Permet au texte d'être rempli avec le dégradé */
+    background-clip: text; /* Permet au texte d'être rempli avec le dégradé */
+    color: transparent; /* Rend le texte transparent pour afficher le dégradé en arrière-plan */
+    font-weight: 700;
+    font-size: 80px;
 }
 
 .poste {
-    color: $main_fonts_color;
-    font-size: medium;
+    color: #ced6de;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
 }
