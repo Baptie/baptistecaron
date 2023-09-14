@@ -6,6 +6,7 @@ import {useTranslation} from "react-i18next";
 import Footer from "./components/Footer";
 import Hobbies from "./components/Hobbies";
 import Competences from "./components/Competences";
+import ExperiencePro from "./components/ExpPro";
 
 function App() {
     useEffect(() => {
@@ -98,13 +99,7 @@ function App() {
                     </div>
                 </section>
 
-                <section id="parcoursPro" className="parcoursPro">
-                    <div className="texteSection">
-                        <h1 className="sectionTitle">{t('experience_pro_libelle')}</h1>
-                        <div className="bloc">{t('alt')}</div>
-                        <div className="bloc">{t('dev')}</div>
-                    </div>
-                </section>
+                <ExperiencePro/>
 
                 <Competences/>
 
