@@ -5,6 +5,7 @@ import LangageSelector from "./components/LangageSelector";
 import {useTranslation} from "react-i18next";
 import Footer from "./components/Footer";
 import Hobbies from "./components/Hobbies";
+import Competences from "./components/Competences";
 
 function App() {
     useEffect(() => {
@@ -105,30 +106,7 @@ function App() {
                     </div>
                 </section>
 
-                <section id="competences" className="competences">
-                    <div className="texteSection">
-                        <h1 className="sectionTitle">{t('competences_libelle')}</h1>
-                        <div className="bloc">
-                            <ul>
-                                <li>{t('java')}</li>
-                                <li>{t('python')}</li>
-                                <li>{t('ocaml')}</li>
-                                <li>{t('web')}</li>
-                                <li>{t('php')}</li>
-                                <li>{t('js')}</li>
-                                <li>{t('sql')}</li>
-                            </ul>
-                        </div>
-                        <div className="bloc">
-                            <ul>
-                                <li>{t('spring')}</li>
-                                <li>{t('react')}</li>
-                                <li>{t('angular')}</li>
-                                <li>{t('symphony')}</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
+                <Competences/>
 
                 <Hobbies/>
             </div>
