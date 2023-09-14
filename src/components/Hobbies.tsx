@@ -13,14 +13,17 @@ export default function Hobbies() {
                 <div className="bloc blocHobbie">
                     <p className="hobbieEmoji">🏐</p>
                     <p className="hobbieLibelle">{t('volley')}</p>
+                    <div className="hidden-details">{t('description_volley')}</div>
                 </div>
                 <div className="bloc blocHobbie">
                     <p className={"hobbieEmoji"}>🪐</p>
                     <p className="hobbieLibelle">{t('astronomie')}</p>
+                    <div className="hidden-details">{t('description_astro')}</div>
                 </div>
                 <div className="bloc blocHobbie">
                     <p className={"hobbieEmoji"}>🎮</p>
                     <p className="hobbieLibelle">{t('jeux_videos')}</p>
+                    <div className="hidden-details">{t('description_games')}</div>
                 </div>
             </div>
 
