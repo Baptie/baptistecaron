@@ -96,7 +96,7 @@ $slide-change-timing: 2.5;
     opacity: 0;
     visibility: hidden;
   }
-#{$slide-change-timing} %,
+#{$slide-change-timing}%,
 #{$animation-steps-fraction}%
 
 {
@@ -124,8 +124,7 @@ $slide-change-timing: 2.5;
   visibility: visible;
 }
 
-100
-% {
+100% {
   transform: translateY(-100%) scale(0.5);
   opacity: 0;
   visibility: hidden;
