@@ -1,7 +1,13 @@
 import React, {useEffect} from 'react';
 import './styles/App.scss';
+import './styles/Effects.scss';
 import LangageSelector from "./components/LangageSelector";
 import {useTranslation} from "react-i18next";
+import Footer from "./components/Footer";
+import Competences from "./components/Competences";
+import ExperiencePro from "./components/ExpPro";
+import School from "./components/School";
+import Stars from "./components/Stars";
 
 function App() {
     useEffect(() => {
@@ -12,11 +18,22 @@ function App() {
             const targetElement = document.getElementById(targetId || '');
 
             if (targetElement) {
+                const navbarElement = document.querySelector('.navbar') as HTMLElement;
+                const navbarHeight = navbarElement ? navbarElement.offsetHeight : 0;
+
                 window.scrollTo({
-                    top: targetElement.offsetTop,
+                    top: targetElement.offsetTop - navbarHeight,
                     behavior: 'smooth',
                 });
+                window.addEventListener("scroll", () => {
+                    if (window.scrollY > 50) {
+                        navbarElement.style.backgroundColor = "rgba(4, 6, 21, 0.5)"; // Fond avec fond flou
+                    } else {
+                        navbarElement.style.backgroundColor = "rgba(255, 255, 255, 0)"; // Fond transparent
+                    }
+                });
             }
+
         }
 
         // Attach event listeners to navbar links
@@ -31,8 +48,6 @@ function App() {
                 link.removeEventListener('click', handleSmoothScroll as unknown as EventListener);
             });
         };
-
-
     }, []);
 
     /* Fonction d'appel aux bases de langages */
@@ -40,7 +55,7 @@ function App() {
 
     return (
         <div className="App">
-
+            <header className="framer-top"></header>
             <div className="navbar">
                 <a href="#accueil">{t('accueil_libelle')}</a>
                 <a href="#presentation">{t('a_propos_libelle')}</a>
@@ -54,99 +69,39 @@ function App() {
                 <section id="accueil" className="accueil">
                     <div className="image-container">
                         <img
-                            src="/photo_baptie.jpeg"
+                            src="/memoji.png"
                             alt="Baptiste PP"
                             className="rounded-image"
                         />
                     </div>
                     <div className="intitulé">
-                        <p className="nom"> Baptiste CARON</p>
+                        <p className="nom">Baptiste CARON</p>
                         <p className="poste">{t('poste')}</p>
                     </div>
                 </section>
 
+
                 <section id="presentation" className="presentation">
-                    <div className="illustration">
-                        <img src="/to_fill.png" alt="to_fill"/>
-                    </div>
-
-                    <div className="texteSection">
-                        <h1 className="sectionTitle">{t('a_propos_libelle')}</h1>
-                        <p>{t('presentation')}</p>
-                    </div>
-
-                </section>
-
-                <section id="etudes" className="etudes">
-                    <div className="texteSection">
-                        <h1 className="sectionTitle">{t('parcours_scolaire_libelle')}</h1>
-                        <ul>
-                            <li>
-                                <label>{t('univ')}</label>
-                                <ul>
-                                    <li>{t('licence')}</li>
-                                    <li>{t('master')}</li>
-                                </ul>
-                            </li>
-
-                            <li>{t('bac')}</li>
-                        </ul>
-                    </div>
-                    <div className="illustration">
-                        <img src="/to_fill.png" alt="to_fill"/>
+                    <h1 className="sectionTitle">{t('a_propos_libelle')}</h1>
+                    <div className="texte">
+                        <div className="texteSection">
+                            <p>{t('presentation')}</p>
+                        </div>
                     </div>
 
                 </section>
 
-                <section id="parcoursPro" className="parcoursPro">
-                    <div className="illustration">
-                        <img src="/to_fill.png" alt="to_fill"/>
-                    </div>
+                <School/>
 
-                    <div className="texteSection">
-                        <h1 className="sectionTitle">{t('experience_pro_libelle')}</h1>
-                        <ul>
-                            <li>
-                                <label>{t('sopra')}</label>
-                                <ul>
-                                    <li>{t('alt')}</li>
-                                    <li>{t('dev')}</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
+                <ExperiencePro/>
 
-                <section id="competences" className="competences">
-                    <div className="texteSection">
-                        <h1 className="sectionTitle">{t('competences_libelle')}</h1>
-                        <ul>
-                            <li>{t('langagesProg')}</li>
-                            <li>{t('frameworkProg')}</li>
-                        </ul>
-                    </div>
-                    <div className="illustration">
-                        <img src="/to_fill.png" alt="to_fill"/>
-                    </div>
+                <Competences/>
 
-                </section>
+                <Stars/>
 
-                <section id="hobbies" className="hobbies">
-                    <div className="illustration">
-                        <img src="/to_fill.png" alt="to_fill"/>
-                    </div>
-
-                    <div className="texteSection">
-                        <h1 className="sectionTitle">{t('hobbies_libelle')}</h1>
-                        <ul>
-                            <li>{t('volley')}</li>
-                            <li>{t('astronomie')}</li>
-                            <li>{t('jeux_videos')}</li>
-                        </ul>
-                    </div>
-
-                </section>
             </div>
+            <div className="framer-bot"></div>
+            <Footer/>
         </div>
     );
 }

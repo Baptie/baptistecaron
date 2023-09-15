@@ -1,0 +1,83 @@
+.timeline {
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+// ======= BLOC DATES
+.dateBlock {
+  position: relative;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.date {
+  padding: 10px;
+  margin-inline: 95px;
+  padding-bottom: 30px;
+  font-size: 35px;
+}
+
+// ======= BLOC TIMELINE
+.timelineBlock {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-circle {
+  border: 7px solid white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.trait {
+  height: 7px;
+  background-color: white;
+  width: 250px;
+}
+
+// ======= BLOC DETAILS
+.detailsBlock {
+  position: relative;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-details {
+  width: 180px;
+  margin: 50px;
+  box-shadow: -0.2em 0 0.7em white;
+  border-radius: 5px;
+  padding-inline: 7px;
+
+  opacity: 0;
+  transform: translateY(-20px);
+
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.traitBefore {
+  height: 7px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  width: 250px;
+}
+
+.traitAfter {
+  height: 7px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  width: 250px;
+}
+
+.detailsActive {
+  opacity: 1;
+  transform: translateY(0);
+}
