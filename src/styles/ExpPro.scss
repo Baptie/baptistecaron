@@ -4,21 +4,19 @@ $animation-timing: 10s;
 $carousel-items: 4;
 $animation-delay-fraction: $animation-timing / $carousel-items;
 $animation-steps-fraction: 100 / $carousel-items;
-$slide-change-timing: 2.5; // percentage of total animation cycle
+$slide-change-timing: 2.5;
+
 
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
-  height: 100vh;
+.parcoursPro {
+  position: relative;
 }
 
 .wrapper {
   background: none;
-  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -134,14 +132,6 @@ body {
 }
 
 }
-
-
-.parcoursPro {
-  display: block;
-  position: relative;
-
-}
-
 .expContent {
   text-align: left;
 }

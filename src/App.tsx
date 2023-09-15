@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Hobbies from "./components/Hobbies";
 import Competences from "./components/Competences";
 import ExperiencePro from "./components/ExpPro";
+import School from "./components/School";
 
 function App() {
     useEffect(() => {
@@ -68,7 +69,7 @@ function App() {
                 <section id="accueil" className="accueil">
                     <div className="image-container">
                         <img
-                            src="/photo_baptie.jpeg"
+                            src="/memoji.png"
                             alt="Baptiste PP"
                             className="rounded-image"
                         />
@@ -90,14 +91,7 @@ function App() {
 
                 </section>
 
-                <section id="etudes" className="etudes">
-                    <div className="texteSection">
-                        <h1 className="sectionTitle">{t('parcours_scolaire_libelle')}</h1>
-                        <div className="bloc">{t('licence')}</div>
-                        <div className="bloc">{t('master')}</div>
-                        <div className="bloc">{t('bac')}</div>
-                    </div>
-                </section>
+                <School/>
 
                 <ExperiencePro/>
 

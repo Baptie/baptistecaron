@@ -1,22 +1,21 @@
 .hobbieEmoji {
   font-size: 150px;
   text-align: center;
-  margin-top: 0;
-}
-
-.hobbieLibelle {
-  text-align: center;
-  font-size: 25px;
-
 }
 
 .blocHobbie {
-  width: 300px;
-  height: 400px;
+  width: 40vh;
+  height: 50vh;
   margin: 50px;
-  padding: 0;
+
   position: relative;
   overflow: hidden;
+  background: none;
+  display: inline-block;
+  color: white;
+  border-radius: 10px;
+  border: 0.5px solid lightblue;
+
 }
 
 .blocHobbie:hover {
@@ -48,4 +47,6 @@
   justify-content: center;
 
   font-weight: bolder;
+
+  width: 80%;
 }
