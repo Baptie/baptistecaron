@@ -7,7 +7,6 @@ import Footer from "./components/Footer";
 import Competences from "./components/Competences";
 import ExperiencePro from "./components/ExpPro";
 import School from "./components/School";
-import Stars from "./components/Stars";
 
 function App() {
     useEffect(() => {
@@ -97,7 +96,6 @@ function App() {
 
                 <Competences/>
 
-                <Stars/>
 
             </div>
             <div className="framer-bot"></div>
