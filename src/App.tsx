@@ -4,10 +4,10 @@ import './styles/Effects.scss';
 import LangageSelector from "./components/LangageSelector";
 import {useTranslation} from "react-i18next";
 import Footer from "./components/Footer";
-import Hobbies from "./components/Hobbies";
 import Competences from "./components/Competences";
 import ExperiencePro from "./components/ExpPro";
 import School from "./components/School";
+import Stars from "./components/Stars";
 
 function App() {
     useEffect(() => {
@@ -97,7 +97,8 @@ function App() {
 
                 <Competences/>
 
-                <Hobbies/>
+                <Stars/>
+
             </div>
             <div className="framer-bot"></div>
             <Footer/>
