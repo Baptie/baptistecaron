@@ -53,7 +53,6 @@ body {
     backdrop-filter: blur(10px); /* Effet de flou pour le fond */
     -webkit-backdrop-filter: blur(10px); /* Effet de flou pour le fond (compatibilité avec Safari) */
 
-
     .langSelectDiv {
         position: absolute;
         right: 40px;
@@ -79,16 +78,16 @@ body {
 }
 
 .navbar a:after {
-    content: '\2022'; /* Code Unicode pour le caractère rond (•) */
+    content: '\2022';
     position: absolute;
-    left: 50%; /* Centre horizontalement le point par rapport à l'élément */
-    bottom: -6px; /* Ajustez la position verticale du point par rapport au texte */
-    transform: translateX(-50%); /* Décale le point de moitié de sa largeur vers la gauche pour le centrer */
-    font-size: 20px; /* Ajustez la taille du point selon vos préférences */
-    line-height: 0; /* Assurez-vous que la ligne n'a pas de hauteur pour un centrage vertical correct */
-    display: inline-block; /* Le point est initialement visible en tant que bloc */
-    opacity: 0; /* Opacité initiale à 0 pour le masquer */
-    transition: opacity 0.3s ease; /* Ajoute une transition de 0.3 seconde à l'opacité */
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%);
+    font-size: 20px;
+    line-height: 0;
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 section:not(.accueil) {
@@ -121,12 +120,6 @@ section {
 }
 
 .texteSection {
-
-}
-
-.texteSection {
-
-
 }
 
 .etudes {

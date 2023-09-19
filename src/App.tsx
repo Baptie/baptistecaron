@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Competences from "./components/Competences";
 import ExperiencePro from "./components/ExpPro";
 import School from "./components/School";
+import Starfield from "./components/Stars";
 
 function App() {
     useEffect(() => {
@@ -47,6 +48,7 @@ function App() {
                 link.removeEventListener('click', handleSmoothScroll as unknown as EventListener);
             });
         };
+
     }, []);
 
     /* Fonction d'appel aux bases de langages */
@@ -63,6 +65,8 @@ function App() {
                 <a href="#competences">{t('competences_libelle')}</a>
                 <LangageSelector/>
             </div>
+            <Starfield/>
+
 
             <div className="content">
                 <section id="accueil" className="accueil">
@@ -77,6 +81,7 @@ function App() {
                         <p className="nom">Baptiste CARON</p>
                         <p className="poste">{t('poste')}</p>
                     </div>
+
                 </section>
 
 
@@ -95,7 +100,6 @@ function App() {
                 <ExperiencePro/>
 
                 <Competences/>
-
 
             </div>
             <div className="framer-bot"></div>
