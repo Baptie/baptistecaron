@@ -1,0 +1,69 @@
+@import 'fonts.css';
+.associatif{
+  position: relative;
+
+}
+.contentSectAsso{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  align-items: center;
+
+}
+.contentDivAsso{
+  position: relative;
+  display: flex;
+  background-color: #ebe8e8;
+  border: white 2px solid;
+  height: 50vh;
+  width: 70%;
+  margin-block: 50px;
+
+
+}
+.imagesAsso{
+  height: 100%;
+  width: 37%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#amigo{
+  background-image: url("../../public/amigo_logo.png");
+
+}
+#jnm{
+  background-image: url("../../public/jnm_logo.png");
+
+}
+
+
+.imagesAsso:hover{
+  box-shadow: 12px 0 15px -10px black inset, -12px 0 15px -10px black inset;
+  transition: 0.05s linear;
+  cursor: pointer;
+}
+
+
+.descAssoBloc{
+  width: 63% ;
+  padding-inline: 40px;
+}
+.descAmigo{
+  text-align: left;
+  color: grey;
+  font-family: SF-Pro-Medium,sans-serif;
+  line-height: 30px;
+  font-size: 3vh;
+}
+.titleDescAsso{
+  position: relative;
+  border-bottom: 1px solid lightgray;
+  font-family: SF-Pro-Bold, sans-serif;
+  font-size: 45px;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: left;
+  overflow: visible;
+}
