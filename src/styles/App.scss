@@ -1,4 +1,5 @@
 @import "Variables";
+@import "fonts.css";
 
 $main_color: $black;
 $main_fonts_color: $white;
@@ -102,8 +103,10 @@ section:not(.accueil) {
 }
 
 .accueil {
-    top: 0;
+    position: relative;
     height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 section {
 
@@ -112,7 +115,7 @@ section {
 
 .sectionTitle {
     font-size: 50px;
-    font-family: "Inter-Bold", "Inter", "Inter Placeholder", sans-serif;
+    font-family: "SF-Pro-Bold", sans-serif;
     background-image: linear-gradient(97deg, rgb(255, 255, 255) 0%, rgb(127, 182, 213) 100%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -120,6 +123,7 @@ section {
 }
 
 .texteSection {
+    font-family: SF-Pro-Medium,sans-serif;
 }
 
 .etudes {
@@ -132,14 +136,11 @@ section {
     display: inline-block;
     border-radius: 50%;
     overflow: hidden;
-    margin: 20px auto; /* Ajustez la marge selon vos préférences */
 }
 
 .rounded-image {
     width: 250px; /* Ajustez la taille de l'image selon vos préférences */
     height: 250px; /* Ajustez la taille de l'image selon vos préférences */
-    border-radius: 50%;
-    object-fit: cover; /* Garantit que l'image remplit le cercle */
     transform: scale3d(1, 1, 1);
 
 }

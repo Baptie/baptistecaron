@@ -8,6 +8,7 @@ import Competences from "./components/Competences";
 import ExperiencePro from "./components/ExpPro";
 import School from "./components/School";
 import Starfield from "./components/Stars";
+import Associatif from "./components/Associatif";
 
 function App() {
     useEffect(() => {
@@ -100,6 +101,8 @@ function App() {
                 <ExperiencePro/>
 
                 <Competences/>
+
+                <Associatif/>
 
             </div>
             <div className="framer-bot"></div>
