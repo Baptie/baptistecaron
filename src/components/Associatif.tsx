@@ -28,7 +28,7 @@ export default function  Associatif(){
 
                 <div className="contentDivAsso">
                     <div className="imagesAsso" id="jnm" onClick={goToJnm}>
-                        <img src="/jnm_logo.png" alt="Logo JNM 2024" id="jnm"/>
+                        <img src="/top_secret.png" alt="Logo JNM 2024" id="jnm"/>
                     </div>
                     <div className="descAssoBloc">
                         <h2 className="titleDescAsso">JNM Orléans 2024</h2>
