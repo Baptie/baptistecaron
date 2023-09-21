@@ -19,7 +19,7 @@ export default function ExperiencePro() {
                         </div>
                         <div className='carousel__item-body'>
                             <p className='title'>{t('stage_title')}</p>
-                            <p>{t('stage_desc')}</p>
+                            <p className='descPoste'>{t('stage_desc')}</p>
                         </div>
                     </div>
 
@@ -29,7 +29,7 @@ export default function ExperiencePro() {
                         </div>
                         <div className='carousel__item-body'>
                             <p className='title'>{t('alt_title')}</p>
-                            <p>{t('alt_desc')}</p>
+                            <p className='descPoste'>{t('alt_desc')}</p>
                         </div>
                     </div>
                     <div className='carousel__item'>
@@ -38,7 +38,7 @@ export default function ExperiencePro() {
                         </div>
                         <div className='carousel__item-body'>
                             <p className='title'>{t('stage_title')}</p>
-                            <p>{t('stage_desc')}</p>
+                            <p className='descPoste'>{t('stage_desc')}</p>
                         </div>
                     </div>
 
@@ -48,7 +48,7 @@ export default function ExperiencePro() {
                         </div>
                         <div className='carousel__item-body'>
                             <p className='title'>{t('alt_title')}</p>
-                            <p>{t('alt_desc')}</p>
+                            <p className='descPoste'>{t('alt_desc')}</p>
                         </div>
                     </div>
                 </div>

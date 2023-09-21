@@ -39,7 +39,6 @@ $slide-change-timing: 2.5;
   width: 100%;
   padding: 0 12px;
   opacity: 0;
-  filter: drop-shadow(0 2px 2px #555);
   will-change: transform, opacity;
   animation: carousel-animate-vertical $animation-timing linear infinite;
 }
@@ -54,16 +53,9 @@ $slide-change-timing: 2.5;
   animation-delay: calc(-#{$animation-delay-fraction} * 2);
 }
 
-// example without negative delays
-// @for $i from 1 through ($carousel-items) {
-//   .carousel__item:nth-child(#{$i}) {
-//     animation-delay: calc(#{$animation-delay-fraction} * #{$i});
-//   }
-// }
-
 .carousel__item-head {
   border-radius: 50%;
-  background: #efeded;
+  background-color: white;
   width: 90px;
   height: 90px;
   padding: 14px;
@@ -77,10 +69,16 @@ $slide-change-timing: 2.5;
 }
 
 .carousel__item-body {
+  color: white;
   width: 100%;
-  background-color: #fff;
+  background-color: rgba(38, 140, 245, 0.05);
+  border: rgba(38, 140, 245, 0.5) 1px solid;
   border-radius: 8px;
   padding: 16px 20px 16px 70px;
+}
+.carousel__item-body:hover {
+  background-color: rgba(38, 140, 245, 0.2);
+
 }
 
 .title {
@@ -88,6 +86,9 @@ $slide-change-timing: 2.5;
   font-size: 20px;
   font-weight: bold;
   margin-top: 10px;
+}
+.descPoste{
+  color: lightgray;
 }
 
 @keyframes carousel-animate-vertical {
