@@ -1,69 +1,87 @@
 @import 'fonts.css';
+@import "Variables";
 .associatif{
   position: relative;
 
 }
 .contentSectAsso{
   display: flex;
-  flex-direction: column;
   width: 100%;
   margin: 0;
-  align-items: center;
+  justify-content: center;
 
 }
 .contentDivAsso{
   position: relative;
   display: flex;
-  background-color: #ebe8e8;
-  border: white 2px solid;
-  height: 50vh;
-  width: 70%;
-  margin-block: 50px;
+  background-color: rgba(38, 140, 245, 0.05);
+  border: rgba(38, 140, 245, 0.5) 1px solid;
+  border-radius: 15px;
+  height: 35vh;
+  width: 40%;
+  margin-inline: 30px;
+
+
+}
+.contentDivAsso:hover{
+  background-color: rgba(38, 140, 245, 0.2);
+  scale: 1.02;
+  transition: ease 0.2s;
 
 
 }
 .imagesAsso{
+  display: flex;
   height: 100%;
   width: 37%;
+  justify-content: center;
+  align-items: center;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
+  padding-inline: 20px;
+
 }
 
 #amigo{
-  background-image: url("../../public/amigo_logo.png");
-
+  max-height: 100%;
+  max-width: 100%;
 }
 #jnm{
-  background-image: url("../../public/jnm_logo.png");
-
+  max-height: 100%;
+  max-width: 100%;
 }
 
 
 .imagesAsso:hover{
-  box-shadow: 12px 0 15px -10px black inset, -12px 0 15px -10px black inset;
   transition: 0.05s linear;
   cursor: pointer;
+  #amigo, #jnm{
+    scale: 1.1;
+    transition: 0.3s ease;
+  }
+
 }
 
 
 .descAssoBloc{
   width: 63% ;
-  padding-inline: 40px;
+  padding-inline: 10px;
 }
 .descAmigo{
   text-align: left;
-  color: grey;
+  color: lightgray;
   font-family: SF-Pro-Medium,sans-serif;
-  line-height: 30px;
-  font-size: 3vh;
+  line-height: 20px;
+  font-size: 2vh;
 }
 .titleDescAsso{
+  color: white;
   position: relative;
-  border-bottom: 1px solid lightgray;
+  border-bottom: rgba(38, 140, 245, 0.2) 1px solid;
   font-family: SF-Pro-Bold, sans-serif;
-  font-size: 45px;
+  font-size: 30px;
   padding-bottom: 20px;
   width: 100%;
   text-align: left;
-  overflow: visible;
 }
