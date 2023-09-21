@@ -15,7 +15,7 @@ export default function ExperiencePro() {
 
                     <div className='carousel__item'>
                         <div className='carousel__item-head'>
-                            <img src="/sopra.png" alt="sopra" className="carousel_brand_image"/>
+                            <img src="/logos/sopra.png" alt="sopra" className="carousel_brand_image"/>
                         </div>
                         <div className='carousel__item-body'>
                             <p className='title'>{t('stage_title')}</p>
@@ -25,7 +25,7 @@ export default function ExperiencePro() {
 
                     <div className='carousel__item'>
                         <div className='carousel__item-head'>
-                            <img src="/sopra.png" alt="sopra" className="carousel_brand_image"/>
+                            <img src="/logos/sopra.png" alt="sopra" className="carousel_brand_image"/>
                         </div>
                         <div className='carousel__item-body'>
                             <p className='title'>{t('alt_title')}</p>
@@ -34,7 +34,7 @@ export default function ExperiencePro() {
                     </div>
                     <div className='carousel__item'>
                         <div className='carousel__item-head'>
-                            <img src="/sopra.png" alt="sopra" className="carousel_brand_image"/>
+                            <img src="/logos/sopra.png" alt="sopra" className="carousel_brand_image"/>
                         </div>
                         <div className='carousel__item-body'>
                             <p className='title'>{t('stage_title')}</p>
@@ -44,7 +44,7 @@ export default function ExperiencePro() {
 
                     <div className='carousel__item'>
                         <div className='carousel__item-head'>
-                            <img src="/sopra.png" alt="sopra" className="carousel_brand_image"/>
+                            <img src="/logos/sopra.png" alt="sopra" className="carousel_brand_image"/>
                         </div>
                         <div className='carousel__item-body'>
                             <p className='title'>{t('alt_title')}</p>

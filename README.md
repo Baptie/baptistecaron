@@ -1,14 +1,17 @@
-# Site vitrine Baptiste Caron
+## 📝 À Propos
+Site vitrine créé par Baptiste CARON. 
 
+![Home Page](public/screenshots/home_page.png)
 ## 🎨 Color Palette
 
-- ![#131313](https://placehold.co/15x15/131313/131313.png) `#131313`
-- ![#292929](https://placehold.co/15x15/292929/292929.png) `#292929`
-- ![#424242](https://placehold.co/15x15/424242/424242.png) `#424242`
-- ![#686868](https://placehold.co/15x15/686868/686868.png) `#686868`
-- ![#FAFAFA](https://placehold.co/15x15/FAFAFA/FAFAFA.png) `#FAFAFA`
-- ![#e1dad2](https://placehold.co/15x15/e37d0a/e37d0a.png) `#e37d0a`
+- ![#FFFFFF](https://placehold.co/15x15/FFFFFF/FFFFFF.png) `#FFFFFF`
+- ![#7FB6D5](https://placehold.co/15x15/7FB6D5/7FB6D5.png) `#7FB6D5`
+- ![#268CF5](https://placehold.co/15x15/268CF5/268CF5.png) `#268CF5`
+- ![#8A51A9](https://placehold.co/15x15/8A51A9/8A51A9.png) `#8A51A9`
+- ![#0b0f35](https://placehold.co/15x15/0b0f35/0b0f35.png) `#0B0F35`
+- ![#070b23](https://placehold.co/15x15/070b23/070b23.png) `#070B23`
+- ![#000000](https://placehold.co/15x15/000000/000000.png) `#000000`
 
-## Contributors
+## 👨🏻‍💻 Contributors
 
 Baptiste CARON - contact.baptistecaron@gmail.com
