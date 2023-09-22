@@ -1,13 +1,4 @@
-$angular-color: #DF2E31;
-$azure-color: #00BCF0;
-$css-color: #2347D1;
-$html-color: #E44D27;
-$java-color: #BF2F2F;
-$mongo-color: #45823E;
-$python-color: #FFDE58;
-$react-color: #5FD5F6;
-$spring-color: #5EB831;
-$sql-color: #DC7532;
+@import "Variables";
 
 .competences {
   position: relative;
@@ -27,7 +18,6 @@ $sql-color: #DC7532;
   background: none;
 
   border-radius: 10px;
-  border: 0.5px #0c232e solid;
   display: flex;
   align-items: center;
   justify-content: center;

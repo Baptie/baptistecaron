@@ -14,8 +14,8 @@
 .contentDivAsso{
   position: relative;
   display: flex;
-  background-color: rgba(38, 140, 245, 0.05);
-  border: rgba(38, 140, 245, 0.5) 1px solid;
+  background-color: $sky-blue-5perc;
+  border:$sky-blue-50perc 1px solid;
   border-radius: 15px;
   height: 35vh;
   width: 40%;
@@ -24,7 +24,7 @@
 
 }
 .contentDivAsso:hover{
-  background-color: rgba(38, 140, 245, 0.2);
+  background-color: $sky-blue-20perc;
   scale: 1.02;
   transition: ease 0.2s;
 
@@ -70,15 +70,15 @@
 }
 .descAmigo{
   text-align: left;
-  color: lightgray;
+  color: $light-gray;
   font-family: SF-Pro-Medium,sans-serif;
   line-height: 20px;
   font-size: 2vh;
 }
 .titleDescAsso{
-  color: white;
+  color: $pure-white;
   position: relative;
-  border-bottom: rgba(38, 140, 245, 0.2) 1px solid;
+  border-bottom: $sky-blue-20perc 1px solid;
   font-family: SF-Pro-Bold, sans-serif;
   font-size: 30px;
   padding-bottom: 20px;
