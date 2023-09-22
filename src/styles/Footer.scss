@@ -3,7 +3,7 @@
 .footer {
   background: $darkblue;
   height: 20vh;
-  border-top: #0b0f35 1px solid;
+  border-top: $deepblue 1px solid;
 }
 
 .lienReseau {
@@ -16,6 +16,6 @@
 }
 
 .copyright {
-  color: white;
+  color: $pure-white;
   margin-top: 25px;
 }

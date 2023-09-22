@@ -73,7 +73,7 @@ function App() {
                 <section id="accueil" className="accueil">
                     <div className="image-container">
                         <img
-                            src="/memoji.png"
+                            src="/baptie/memoji.png"
                             alt="Baptiste PP"
                             className="rounded-image"
                         />

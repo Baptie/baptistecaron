@@ -55,7 +55,7 @@ $slide-change-timing: 2.5;
 
 .carousel__item-head {
   border-radius: 50%;
-  background-color: white;
+  background-color: $pure-white;
   width: 90px;
   height: 90px;
   padding: 14px;
@@ -69,15 +69,15 @@ $slide-change-timing: 2.5;
 }
 
 .carousel__item-body {
-  color: white;
+  color: $pure-white;
   width: 100%;
-  background-color: rgba(38, 140, 245, 0.05);
-  border: rgba(38, 140, 245, 0.5) 1px solid;
+  background-color:$sky-blue-5perc;
+  border: $sky-blue-50perc 1px solid;
   border-radius: 8px;
   padding: 16px 20px 16px 70px;
 }
 .carousel__item-body:hover {
-  background-color: rgba(38, 140, 245, 0.2);
+  background-color: $sky-blue-20perc;
 
 }
 
@@ -88,7 +88,7 @@ $slide-change-timing: 2.5;
   margin-top: 10px;
 }
 .descPoste{
-  color: lightgray;
+  color:$light-gray;
 }
 
 @keyframes carousel-animate-vertical {

@@ -1,16 +1,37 @@
 /* Couleurs */
-$black: #131313;
-$dark-gray: #292929;
-$gray: #424242;
-$light-gray: #686868;
-$white: #ffffff;
-$orange: #e37d0a;
-$ivoire: #fdf6e4;
-$chiffon: #FBFAF2;
+$pure-white:#FFFFFF;
+$light-gray:#D3D3D3;
+$light-gray-blue:#ced6de;
+$light-blue:#7FB6D5;
+$sky-blue: #268CF5;
+$violet: #8A51A9;
+$deepblue: #0b0f35;
 $darkblue: #070b23;
-$violet: #8A51A93F;
+$pure-black: #000000;
 
-/* Dégradés */
-$gray-70: rgb(66, 66, 66, 0.7);
-$black-70: rgb(19, 19, 19, 0.7);
+/* Transparents*/
+$sky-blue-0perc: rgba(38, 140, 245, 0);
+$sky-blue-5perc: rgba(38, 140, 245, 0.05);
+$sky-blue-20perc: rgba(38, 140, 245, 0.2);
+$sky-blue-25perc: rgba(38, 140, 245, 0.25);
+$sky-blue-50perc: rgba(38, 140, 245, 0.5);
+
+$violet-0perc:rgba(138,81,169, 0);
+$violet-25perc:rgba(138,81,169, 0.25);
+
+$pure-white-0perc:rgba(255, 255, 255, 0);
+$pure-white-100perc:rgba(255, 255, 255, 100);
+
+/* Couleurs Technos */
+$angular-color: #DF2E31;
+$azure-color: #00BCF0;
+$css-color: #2347D1;
+$html-color: #E44D27;
+$java-color: #BF2F2F;
+$mongo-color: #45823E;
+$python-color: #FFDE58;
+$react-color: #5FD5F6;
+$spring-color: #5EB831;
+$sql-color: #DC7532;
+
 
