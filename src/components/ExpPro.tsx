@@ -3,56 +3,38 @@ import '../styles/ExpPro.scss';
 
 export default function ExperiencePro() {
 
+    function goToSopra(){
+        window.open("https://www.soprasteria.com/fr", "_blank");
+    }
     /* Fonction d'appel aux bases de langages */
     const {t} = useTranslation();
 
     return (
         <section id="parcoursPro" className="parcoursPro">
             <h1 className="sectionTitle">{t('experience_pro_libelle')}</h1>
+            <div className="contentSectAsso">
 
-            <div className='wrapper'>
-                <div className='carousel'>
-
-                    <div className='carousel__item'>
-                        <div className='carousel__item-head'>
-                            <img src="/logos/sopra.png" alt="sopra" className="carousel_brand_image"/>
-                        </div>
-                        <div className='carousel__item-body'>
-                            <p className='title'>{t('stage_title')}</p>
-                            <p className='descPoste'>{t('stage_desc')}</p>
-                        </div>
+                <div className="contentDivAsso" onClick={goToSopra}>
+                    <div className="imagesAsso" id="amigo" >
+                        <img src="/logos/logo-sopra-blanc.png" alt="Logo Sopra" id="amigo"/>
                     </div>
-
-                    <div className='carousel__item'>
-                        <div className='carousel__item-head'>
-                            <img src="/logos/sopra.png" alt="sopra" className="carousel_brand_image"/>
-                        </div>
-                        <div className='carousel__item-body'>
-                            <p className='title'>{t('alt_title')}</p>
-                            <p className='descPoste'>{t('alt_desc')}</p>
-                        </div>
+                    <div className="descAssoBloc">
+                        <h2 className="titleDescAsso">Développeur Fullstack</h2>
+                        <p className="descAmigo">{t('amigo_desc')}</p>
                     </div>
-                    <div className='carousel__item'>
-                        <div className='carousel__item-head'>
-                            <img src="/logos/sopra.png" alt="sopra" className="carousel_brand_image"/>
-                        </div>
-                        <div className='carousel__item-body'>
-                            <p className='title'>{t('stage_title')}</p>
-                            <p className='descPoste'>{t('stage_desc')}</p>
-                        </div>
-                    </div>
+                </div>
 
-                    <div className='carousel__item'>
-                        <div className='carousel__item-head'>
-                            <img src="/logos/sopra.png" alt="sopra" className="carousel_brand_image"/>
-                        </div>
-                        <div className='carousel__item-body'>
-                            <p className='title'>{t('alt_title')}</p>
-                            <p className='descPoste'>{t('alt_desc')}</p>
-                        </div>
+                <div className="contentDivAsso"  onClick={goToSopra}>
+                    <div className="imagesAsso" id="jnm">
+                        <img src="/logos/logo-sopra-blanc.png" alt="Logo Sopra" id="jnm"/>
+                    </div>
+                    <div className="descAssoBloc">
+                        <h2 className="titleDescAsso">Ingénieur d'Études et de Développement</h2>
+                        <p className="descAmigo">{t('jnm_desc')}</p>
                     </div>
                 </div>
             </div>
+
         </section>
     );
 }
