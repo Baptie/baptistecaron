@@ -20,6 +20,7 @@
   height: 35vh;
   width: 40%;
   margin-inline: 30px;
+  cursor: pointer;
 
 
 }
@@ -51,18 +52,6 @@
   max-height: 100%;
   max-width: 100%;
 }
-
-
-.imagesAsso:hover{
-  transition: 0.05s linear;
-  cursor: pointer;
-  #amigo, #jnm{
-    scale: 1.1;
-    transition: 0.3s ease;
-  }
-
-}
-
 
 .descAssoBloc{
   width: 63% ;

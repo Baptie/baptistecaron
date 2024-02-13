@@ -16,8 +16,8 @@ export default function  Associatif(){
             <h1 className="sectionTitle">{t('associatif')}</h1>
             <div className="contentSectAsso">
 
-                <div className="contentDivAsso">
-                    <div className="imagesAsso" id="amigo" onClick={goToAmigo}>
+                <div className="contentDivAsso" onClick={goToAmigo}>
+                    <div className="imagesAsso" id="amigo" >
                         <img src="/logos/amigo_logo.png" alt="Logo AMIGO" id="amigo"/>
                     </div>
                     <div className="descAssoBloc">
@@ -26,9 +26,9 @@ export default function  Associatif(){
                     </div>
                 </div>
 
-                <div className="contentDivAsso">
-                    <div className="imagesAsso" id="jnm" onClick={goToJnm}>
-                        <img src="/logos/top_secret.png" alt="Logo JNM 2024" id="jnm"/>
+                <div className="contentDivAsso"  onClick={goToJnm}>
+                    <div className="imagesAsso" id="jnm">
+                        <img src="/logos/jnm_logo.png" alt="Logo JNM 2024" id="jnm"/>
                     </div>
                     <div className="descAssoBloc">
                         <h2 className="titleDescAsso">JNM Orléans 2024</h2>

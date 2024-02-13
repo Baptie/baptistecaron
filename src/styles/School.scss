@@ -56,9 +56,11 @@
 .event-details {
   width: 180px;
   margin: 50px;
-  box-shadow: -0.2em 0 0.7em $pure-white;
-  border-radius: 5px;
+  box-shadow: 0 0 100px $pure-white-30perc;
+  border-radius: 10px;
   padding-inline: 7px;
+
+  background-color: transparent;
 
   opacity: 0;
   transform: translateY(-20px);
