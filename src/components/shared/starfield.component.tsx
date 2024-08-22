@@ -1,4 +1,4 @@
-import '../styles/Stars.scss'
+import '../../styles/stars.scss'
 import React, {useEffect} from "react";
 
 export default function Starfield(){

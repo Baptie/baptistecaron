@@ -1,8 +1,9 @@
 import {useTranslation} from "react-i18next";
-import '../styles/Associatif.scss';
-import amigo_logo from "../assets/logos/amigo_logo.png";
-import jnm_logo from "../assets/logos/jnm_logo.png";
-import mc_logo from "../assets/logos/mc_logo.png";
+import '../../styles/associatif.scss';
+import amigo_logo from "../../assets/logos/amigo_logo.png";
+import jnm_logo from "../../assets/logos/jnm_logo.png";
+import mc_logo from "../../assets/logos/mc_logo.png";
+import SectionTitleComponent from "../shared/sectionTitle.component";
 
 
 export default function  Associatif(){
@@ -20,7 +21,7 @@ export default function  Associatif(){
 
     return(
         <section className="associatif">
-            <h1 className="sectionTitle">{t('associatif')}</h1>
+            <SectionTitleComponent titre={t('associatif')}/>
             <div className="contentSectAsso">
 
                 <div className="contentDivAsso" onClick={goToAmigo}>

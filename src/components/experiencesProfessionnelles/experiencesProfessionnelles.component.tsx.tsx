@@ -1,6 +1,7 @@
 import {useTranslation} from "react-i18next";
-import '../styles/ExpPro.scss';
-import sopra_logo from "../assets/logos/logo-sopra-blanc.png"
+import '../../styles/experiencesProfessionnelles.scss';
+import sopra_logo from "../../assets/logos/logo-sopra-blanc.png"
+import SectionTitleComponent from "../shared/sectionTitle.component";
 
 export default function ExperiencePro() {
 
@@ -12,7 +13,7 @@ export default function ExperiencePro() {
 
     return (
         <section id="parcoursPro" className="parcoursPro">
-            <h1 className="sectionTitle">{t('experience_pro_libelle')}</h1>
+            <SectionTitleComponent titre={t('experience_pro_libelle')}/>
             <div className="contentSectAsso">
 
                 <div className="contentDivAsso" onClick={goToSopra}>

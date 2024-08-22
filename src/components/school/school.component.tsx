@@ -1,6 +1,7 @@
 import React from "react";
 import {useTranslation} from "react-i18next";
-import '../styles/School.scss'
+import '../../styles/school.scss'
+import SectionTitleComponent from "../shared/sectionTitle.component";
 
 export default function School() {
     /* Fonction d'appel aux bases de langages */
@@ -27,7 +28,7 @@ export default function School() {
 
     return (
         <section id="etudes" className="etudes">
-            <h1 className="sectionTitle">{t('parcours_scolaire_libelle')}</h1>
+            <SectionTitleComponent titre={t('parcours_scolaire_libelle')}/>
             <div className="timeline">
                 <div className="dateBlock">
                     <div className="date">2018</div>

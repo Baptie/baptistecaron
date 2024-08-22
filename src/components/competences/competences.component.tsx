@@ -1,16 +1,17 @@
-import '../styles/Competences.scss'
+import '../../styles/competences.scss'
 import React from "react";
 import {useTranslation} from "react-i18next";
-import java from "../assets/techs/java.png"
-import sql from "../assets/techs/sql.png" 
-import mongo from "../assets/techs/mongodb.webp" 
-import html from "../assets/techs/html.png" 
-import css from "../assets/techs/css.png" 
-import python from "../assets/techs/python.png" 
-import spring from "../assets/techs/spring.png" 
-import angular from "../assets/techs/angular.png" 
-import react from "../assets/techs/react.png" 
-import azure from "../assets/techs/azure.png" 
+import java from "../../assets/techs/java.png"
+import sql from "../../assets/techs/sql.png" 
+import mongo from "../../assets/techs/mongodb.webp" 
+import html from "../../assets/techs/html.png" 
+import css from "../../assets/techs/css.png" 
+import python from "../../assets/techs/python.png" 
+import spring from "../../assets/techs/spring.png" 
+import angular from "../../assets/techs/angular.png" 
+import react from "../../assets/techs/react.png" 
+import azure from "../../assets/techs/azure.png" 
+import SectionTitleComponent from '../shared/sectionTitle.component';
 
 export default function Competences() {
     /* Fonction d'appel aux bases de langages */
@@ -18,7 +19,7 @@ export default function Competences() {
     return (
         <section id="competences" className="competences">
             <div className="texteSection">
-                <h1 className="sectionTitle">{t('competences_libelle')}</h1>
+                <SectionTitleComponent titre={t('competences_libelle')}/>
                 <div className="containerCompetences">
                     <div className="blocCompetence java">
                         <img src={java} alt="" className="logoTechno"/>
