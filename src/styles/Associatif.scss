@@ -4,12 +4,52 @@
   position: relative;
 
 }
-.contentSectAsso{
-  display: flex;
-  width: 100%;
-  margin: 0;
-  justify-content: center;
+@media (max-width: $width_desktop){
+  .contentSectAsso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 1rem;
 
+  }
+  .contentDivAsso{
+    margin-block: 1rem;
+    cursor: pointer;
+    align-items: center;
+  
+  }
+  #imgAsso{
+    max-width: 75%;
+    max-height: 75%;
+  }
+  .descriptionAsso{
+    font-size: 1.4vh;
+  }
+}
+@media(min-width: $width_desktop){
+  .contentSectAsso{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+  }
+  .contentDivAsso{
+    height: 35vh;
+    width: 40%;
+    margin-inline: 30px;
+    cursor: pointer;
+    overflow: hidden;
+
+    #imgAsso{
+      max-height: 100%;
+      max-width: 100%;
+    }
+    .descriptionAsso{
+      font-size: 2vh;
+    }
+    
+  
+  }
 }
 .contentDivAsso{
   position: relative;
@@ -17,13 +57,11 @@
   background-color: $sky-blue-5perc;
   border:$sky-blue-50perc 1px solid;
   border-radius: 15px;
-  height: 35vh;
-  width: 40%;
-  margin-inline: 30px;
-  cursor: pointer;
 
+  
 
 }
+
 .contentDivAsso:hover{
   background-color: $sky-blue-20perc;
   scale: 1.02;
@@ -44,27 +82,13 @@
 
 }
 
-#amigo{
-  max-height: 100%;
-  max-width: 100%;
-}
-#jnm{
-  max-height: 100%;
-  max-width: 100%;
-}
 
-.descAssoBloc{
+
+.textAssoBloc{
   width: 63% ;
   padding-inline: 10px;
 }
-.descAmigo{
-  text-align: left;
-  color: $light-gray;
-  font-family: SF-Pro-Medium,sans-serif;
-  line-height: 20px;
-  font-size: 2vh;
-}
-.titleDescAsso{
+.titreAsso{
   color: $pure-white;
   position: relative;
   border-bottom: $sky-blue-20perc 1px solid;
@@ -73,4 +97,10 @@
   padding-bottom: 20px;
   width: 100%;
   text-align: left;
+}
+.descriptionAsso{
+  text-align: left;
+  color: $light-gray;
+  font-family: SF-Pro-Medium,sans-serif;
+  line-height: 1rem;
 }

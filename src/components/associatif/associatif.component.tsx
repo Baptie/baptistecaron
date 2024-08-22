@@ -26,31 +26,31 @@ export default function  Associatif(){
 
                 <div className="contentDivAsso" onClick={goToAmigo}>
                     <div className="imagesAsso" id="amigo" >
-                        <img src={amigo_logo} alt="Logo AMIGO" id="amigo"/>
+                        <img src={amigo_logo} alt="Logo AMIGO" id="imgAsso"/>
                     </div>
-                    <div className="descAssoBloc">
-                        <h2 className="titleDescAsso">AMIGO</h2>
-                        <p className="descAmigo">{t('amigo_desc')}</p>
+                    <div className="textAssoBloc">
+                        <h2 className="titreAsso">AMIGO</h2>
+                        <p className="descriptionAsso">{t('amigo_desc')}</p>
                     </div>
                 </div>
 
                 <div className="contentDivAsso"  onClick={goToJnm}>
                     <div className="imagesAsso" id="jnm">
-                        <img src={jnm_logo} alt="Logo JNM 2024" id="jnm"/>
+                        <img src={jnm_logo} alt="Logo JNM 2024" id="imgAsso"/>
                     </div>
-                    <div className="descAssoBloc">
-                        <h2 className="titleDescAsso">JNM Orléans 2024</h2>
-                        <p className="descAmigo">{t('jnm_desc')}</p>
+                    <div className="textAssoBloc">
+                        <h2 className="titreAsso">JNM Orléans 2024</h2>
+                        <p className="descriptionAsso">{t('jnm_desc')}</p>
                     </div>
                 </div>
 
                 <div className="contentDivAsso"  onClick={goToMC}>
                     <div className="imagesAsso" id="jnm">
-                        <img src={mc_logo} alt="Logo MC" id="jnm"/>
+                        <img src={mc_logo} alt="Logo MC" id="imgAsso"/>
                     </div>
-                    <div className="descAssoBloc">
-                        <h2 className="titleDescAsso">MIAGE Connection</h2>
-                        <p className="descAmigo">{t('mc_desc')}</p>
+                    <div className="textAssoBloc">
+                        <h2 className="titreAsso">MIAGE Connection</h2>
+                        <p className="descriptionAsso">{t('mc_desc')}</p>
                     </div>
                 </div>
             </div>
