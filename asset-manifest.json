@@ -1,20 +1,35 @@
 {
   "files": {
     "main.css": "/baptistecaron/static/css/main.c25b94d9.css",
-    "main.js": "/baptistecaron/static/js/main.26bc2efd.js",
+    "main.js": "/baptistecaron/static/js/main.380a35ce.js",
     "static/js/787.ee7fba46.chunk.js": "/baptistecaron/static/js/787.ee7fba46.chunk.js",
+    "static/media/amigo_logo.png": "/baptistecaron/static/media/amigo_logo.352f4602d6d22addf957.png",
     "static/media/SFPRODISPLAYMEDIUM.OTF": "/baptistecaron/static/media/SFPRODISPLAYMEDIUM.b85d841dacb040b84951.OTF",
     "static/media/SFPRODISPLAYBOLD.OTF": "/baptistecaron/static/media/SFPRODISPLAYBOLD.b1f4d2c69fa808ebca12.OTF",
+    "static/media/jnm_logo.png": "/baptistecaron/static/media/jnm_logo.a2ebce9ab7bc4a734409.png",
     "static/media/sfprodisplayregular.ttf": "/baptistecaron/static/media/sfprodisplayregular.d1f5e6e16dd4f75c3950.ttf",
+    "static/media/react.png": "/baptistecaron/static/media/react.8a6fc0a24a800d1e0f4a.png",
+    "static/media/mc_logo.png": "/baptistecaron/static/media/mc_logo.1666a5227817f486fdb8.png",
+    "static/media/python.png": "/baptistecaron/static/media/python.82efb64f8698a267f8bf.png",
+    "static/media/angular.png": "/baptistecaron/static/media/angular.2f5338dcfe41d6430ab6.png",
+    "static/media/sql.png": "/baptistecaron/static/media/sql.85fb38d6773862e917f4.png",
+    "static/media/new-Instagram-logo-white-glyph.png": "/baptistecaron/static/media/new-Instagram-logo-white-glyph.ed5ed57e98d053cf1e55.png",
+    "static/media/java.png": "/baptistecaron/static/media/java.fdabd4e11f1235e4e8e0.png",
+    "static/media/memoji.png": "/baptistecaron/static/media/memoji.c75b613c836f72b404b7.png",
+    "static/media/css.png": "/baptistecaron/static/media/css.0c4e6f5f50dfbab57cd6.png",
     "static/media/Helvetica-Bold-Font.ttf": "/baptistecaron/static/media/Helvetica-Bold-Font.c376facff17e67e2f4d7.ttf",
+    "static/media/spring.png": "/baptistecaron/static/media/spring.a1f2f77519cc512a7b8b.png",
+    "static/media/azure.png": "/baptistecaron/static/media/azure.f6e15a2341f11212e23e.png",
+    "static/media/logo-sopra-blanc.png": "/baptistecaron/static/media/logo-sopra-blanc.a5f0737b114cdbd48e90.png",
     "static/media/Ministro_Regular.woff": "/baptistecaron/static/media/Ministro_Regular.7513ddb84c4b5a80081c.woff",
+    "static/media/mongodb.webp": "/baptistecaron/static/media/mongodb.6e9578f3e81161993356.webp",
     "index.html": "/baptistecaron/index.html",
     "main.c25b94d9.css.map": "/baptistecaron/static/css/main.c25b94d9.css.map",
-    "main.26bc2efd.js.map": "/baptistecaron/static/js/main.26bc2efd.js.map",
+    "main.380a35ce.js.map": "/baptistecaron/static/js/main.380a35ce.js.map",
     "787.ee7fba46.chunk.js.map": "/baptistecaron/static/js/787.ee7fba46.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c25b94d9.css",
-    "static/js/main.26bc2efd.js"
+    "static/js/main.380a35ce.js"
   ]
 }
