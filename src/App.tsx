@@ -9,6 +9,7 @@ import ExperiencePro from "./components/ExpPro";
 import School from "./components/School";
 import Starfield from "./components/Stars";
 import Associatif from "./components/Associatif";
+import memoji from "./assets/baptie/memoji.png";
 
 function App() {
     useEffect(() => {
@@ -73,7 +74,7 @@ function App() {
                 <section id="accueil" className="accueil">
                     <div className="image-container">
                         <img
-                            src="/baptie/memoji.png"
+                            src={memoji}
                             alt="Baptiste PP"
                             className="rounded-image"
                         />

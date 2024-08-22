@@ -1,5 +1,6 @@
 import {useTranslation} from "react-i18next";
 import '../styles/ExpPro.scss';
+import sopra_logo from "../assets/logos/logo-sopra-blanc.png"
 
 export default function ExperiencePro() {
 
@@ -16,7 +17,7 @@ export default function ExperiencePro() {
 
                 <div className="contentDivAsso" onClick={goToSopra}>
                     <div className="imagesAsso" id="amigo" >
-                        <img src="/logos/logo-sopra-blanc.png" alt="Logo Sopra" id="amigo"/>
+                        <img src={sopra_logo} alt="Logo Sopra" id="amigo"/>
                     </div>
                     <div className="descAssoBloc">
                         <h2 className="titleDescAsso">Développeur Fullstack</h2>
@@ -26,7 +27,7 @@ export default function ExperiencePro() {
 
                 <div className="contentDivAsso"  onClick={goToSopra}>
                     <div className="imagesAsso" id="jnm">
-                        <img src="/logos/logo-sopra-blanc.png" alt="Logo Sopra" id="jnm"/>
+                        <img src={sopra_logo}  alt="Logo Sopra" id="jnm"/>
                     </div>
                     <div className="descAssoBloc">
                         <h2 className="titleDescAsso">Ingénieur d'Études et de Développement</h2>
