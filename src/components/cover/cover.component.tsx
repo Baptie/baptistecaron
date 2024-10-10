@@ -1,10 +1,8 @@
-import { useTranslation } from "react-i18next";
 import memoji from "../../assets/baptie/memoji.png";
 import './cover.component.scss';
 import postes from '../../data/postes.json'
 
 const Cover = () =>{
-    const {t} = useTranslation();
     return(
         <section id="accueil" className="accueil">
                     <div className="image-container">

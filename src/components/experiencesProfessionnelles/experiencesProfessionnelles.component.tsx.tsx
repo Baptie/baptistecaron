@@ -6,9 +6,6 @@ import ExperienceComponent from "./experience/experience.component";
 import work from '../../assets/baptie/Working-rafiki.png'
 export default function ExperiencePro() {
 
-    function goToSopra(){
-        window.open("https://www.soprasteria.com/fr", "_blank");
-    }
     /* Fonction d'appel aux bases de langages */
     const {t} = useTranslation();
 

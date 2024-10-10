@@ -1,9 +1,6 @@
 import { Skill } from '../categorySkill/categorySkill.component'
 import './skill.component.scss'
 
-interface SkillProp{
-    skill:Skill
-}
 const SkillComponent : React.FC<Skill> = (prop :Skill) => {
     return(
         <div className="skillContainer">

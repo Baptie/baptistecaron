@@ -58,6 +58,7 @@
 .nom{
     display: inline-block;
     font-size: 3rem;
+    text-align: center;
     font-weight: 900;
     margin: 0;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -73,8 +74,9 @@
     @media screen and (max-width :1024px) {
         align-items: center;
         animation: 
-    typingPhone 1.5s steps(20, end),
-      blink-caret .75s step-end infinite;
+        typingPhone 1.5s steps(20, end),
+        blink-caret .75s step-end infinite;
+        font-size: 2rem;
      
     }
     

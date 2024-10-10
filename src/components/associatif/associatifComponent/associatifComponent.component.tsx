@@ -18,7 +18,7 @@ interface AssoComponentProp{
 
 }
 const AssociatifComponent : React.FC<AssoComponentProp> = (prop:AssoComponentProp) => {
-    const opposite = parseInt(prop.id)%2 == 0
+    const opposite = parseInt(prop.id)%2 === 0
  
     return(
         <div className={`experienceAssociatifContainer`}>

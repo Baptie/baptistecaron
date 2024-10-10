@@ -1,15 +1,12 @@
-import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 import './navbar.component.scss';
 import home from '../../assets/navbar/home.png';
 import about from '../../assets/navbar/id-card.png';
-import school from '../../assets/navbar/graduation-cap.png';
 import competences from '../../assets/navbar/competency.png';
 import suitcase from '../../assets/navbar/suitcase.png';
 import hand from '../../assets/navbar/hand.png';
 
 const Navbar = () => {
-    const {t} = useTranslation();
     useEffect(() => {
         // Function to handle smooth scrolling
         function handleSmoothScroll(event: React.MouseEvent<HTMLAnchorElement>) {
