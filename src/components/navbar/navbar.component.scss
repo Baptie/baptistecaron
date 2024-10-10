@@ -1,0 +1,38 @@
+.navbarContainer{
+    @media screen and (max-width :600px) {
+        display: none;
+    }
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    bottom: 1rem;
+    z-index: 2;
+}
+.navbar{
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 20px;
+}
+.itemNavbar{
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rem;
+}
+.itemNavbar:hover{
+    background-color: rgb(0, 0, 0,0.3);
+    transform: scale(0.9);
+    transition: ease-in-out 0.2s;
+}
+
+.iconNavbar{
+    height: 2rem;
+    width: auto;
+    border-radius: 2rem;
+    overflow: visible;
+}

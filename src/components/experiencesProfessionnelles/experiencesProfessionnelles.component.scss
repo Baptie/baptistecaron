@@ -1,0 +1,30 @@
+.parcoursPro{
+    padding: 3rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width :1024px) {
+        height: auto;
+        align-items: center; 
+        padding:2rem;
+    }
+}
+.expProContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: "Afacad Flux", sans-serif;
+    @media screen and (max-width :1024px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.workAssetContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+}
+.workAsset{
+    height: 100%;
+}

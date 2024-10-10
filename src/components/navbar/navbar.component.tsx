@@ -1,6 +1,12 @@
 import { useTranslation } from "react-i18next";
-import LangageSelector from "./langageSelector.component";
 import { useEffect } from "react";
+import './navbar.component.scss';
+import home from '../../assets/navbar/home.png';
+import about from '../../assets/navbar/id-card.png';
+import school from '../../assets/navbar/graduation-cap.png';
+import competences from '../../assets/navbar/competency.png';
+import suitcase from '../../assets/navbar/suitcase.png';
+import hand from '../../assets/navbar/hand.png';
 
 const Navbar = () => {
     const {t} = useTranslation();
@@ -16,16 +22,10 @@ const Navbar = () => {
                 const navbarHeight = navbarElement ? navbarElement.offsetHeight : 0;
 
                 window.scrollTo({
-                    top: targetElement.offsetTop - navbarHeight,
+                    top: targetElement.offsetTop + navbarHeight,
                     behavior: 'smooth',
                 });
-                window.addEventListener("scroll", () => {
-                    if (window.scrollY > 50) {
-                        navbarElement.style.backgroundColor = "rgba(4, 6, 21, 0.5)"; // Fond avec fond flou
-                    } else {
-                        navbarElement.style.backgroundColor = "rgba(255, 255, 255, 0)"; // Fond transparent
-                    }
-                });
+                
             }
 
         }
@@ -46,14 +46,26 @@ const Navbar = () => {
     }, []);
     
     return (
-        <div className="navbar">
-                <a href="#accueil">{t('accueil_libelle')}</a>
-                <a href="#presentation">{t('a_propos_libelle')}</a>
-                <a href="#etudes">{t('parcours_scolaire_libelle')}</a>
-                <a href="#parcoursPro">{t('experience_pro_libelle')}</a>
-                <a href="#competences">{t('competences_libelle')}</a>
-                <LangageSelector/>
+        <div className="navbarContainer">
+            <div className="navbar">
+                <a className="itemNavbar" href="#accueil">
+                    <img src={home} alt="" className="iconNavbar" />
+                </a>
+                <a className="itemNavbar" href="#presentation">
+                    <img src={about} alt="" className="iconNavbar" />
+                </a>
+                <a className="itemNavbar" href="#competences">
+                    <img src={competences} alt="" className="iconNavbar" />
+                </a>
+                <a className="itemNavbar" href="#parcoursPro">
+                    <img src={suitcase} alt="" className="iconNavbar" />
+                </a>
+                <a className="itemNavbar" href="#associatif">
+                    <img src={hand} alt="" className="iconNavbar" />
+                </a>
             </div>
+                
+        </div>
     );
 }
 

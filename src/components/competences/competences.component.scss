@@ -1,0 +1,24 @@
+.competences{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width :1024px) {
+        height: auto;
+        align-items: center;
+    }
+   
+}
+.texteSection{
+    width: 100%;
+
+    
+}
+.categoriesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 3rem;
+    row-gap: 3rem;
+    padding-block: 6rem;
+    justify-content: center;
+}

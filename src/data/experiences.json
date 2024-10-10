@@ -1,0 +1,53 @@
+{
+    "experiences":[
+        {
+            "id":"01",
+            "date":"Avril 2022 à Juin 2022 (3 mois)",
+            "name":"Développeur Java",
+            "keywords":[
+                "Spring Boot",
+                "Apache POI",
+                "Expression du besoin"
+            ],
+            "description":[
+                "Refonte d'une application de gestion de projet",
+                "Étude & analyse des besoins",
+                "Manipulation de la librairie Apache POI"
+            ] 
+         }, 
+        {
+            "id":"02",
+            "date":"Juillet 2022 à Juin 2024 (1 an et 11 mois)",
+            "name":"Développeur JEE",
+            "keywords":[
+                "Spring Framework",
+                "Maintenance",
+                "Support",
+                "JUnit"
+            ],
+            "description":[
+                "Maintenance Applicative",
+                "Support de production",
+                "Rédaction & Edition de spécifications techniques et fonctionnelles",
+                "Rédaction de rapports d'analyse"
+            ] 
+        },
+        {
+            "id":"03",
+            "date":"Juin 2024 à Août 2024 (3 mois)",
+            "name":"Développeur React",
+            "keywords":[
+                "React JS",
+                "SCRUM",
+                "Expression du besoin"
+            ],
+            "description":
+            [
+                "Réalisation d'une application de souscription à une assurance vie en ReactJS et Spring Boot",
+                "Proposition de solutions techniques",
+                "Travail en framework Agile (SCRUM)"
+            ] 
+        }
+    ]
+          
+}

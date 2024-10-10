@@ -1,10 +1,11 @@
 import {useTranslation} from "react-i18next";
-import '../../styles/associatif.scss';
+import './associatif.component.scss';
 import amigo_logo from "../../assets/logos/amigo_logo.png";
 import jnm_logo from "../../assets/logos/jnm_logo.png";
 import mc_logo from "../../assets/logos/mc_logo.png";
 import SectionTitleComponent from "../shared/sectionTitle.component";
-
+import asso from '../../data/asso.json'
+import AssociatifComponent from "./associatifComponent/associatifComponent.component";
 
 export default function  Associatif(){
     function goToAmigo(){
@@ -20,40 +21,26 @@ export default function  Associatif(){
     const {t} = useTranslation();
 
     return(
-        <section className="associatif">
+        <section className="associatif" id="associatif">
             <SectionTitleComponent titre={t('associatif')}/>
-            <div className="contentSectAsso">
-
-                <div className="contentDivAsso" onClick={goToAmigo}>
-                    <div className="imagesAsso" id="amigo" >
-                        <img src={amigo_logo} alt="Logo AMIGO" id="amigo"/>
-                    </div>
-                    <div className="descAssoBloc">
-                        <h2 className="titleDescAsso">AMIGO</h2>
-                        <p className="descAmigo">{t('amigo_desc')}</p>
-                    </div>
-                </div>
-
-                <div className="contentDivAsso"  onClick={goToJnm}>
-                    <div className="imagesAsso" id="jnm">
-                        <img src={jnm_logo} alt="Logo JNM 2024" id="jnm"/>
-                    </div>
-                    <div className="descAssoBloc">
-                        <h2 className="titleDescAsso">JNM Orléans 2024</h2>
-                        <p className="descAmigo">{t('jnm_desc')}</p>
-                    </div>
-                </div>
-
-                <div className="contentDivAsso"  onClick={goToMC}>
-                    <div className="imagesAsso" id="jnm">
-                        <img src={mc_logo} alt="Logo MC" id="jnm"/>
-                    </div>
-                    <div className="descAssoBloc">
-                        <h2 className="titleDescAsso">MIAGE Connection</h2>
-                        <p className="descAmigo">{t('mc_desc')}</p>
-                    </div>
-                </div>
-            </div>
+            {
+                asso.assos.map(
+                    asso => {
+                        return(
+                            <AssociatifComponent
+                            key={asso.id}
+                            id={asso.id}
+                            name={asso.name}
+                            description={asso.description}
+                            postes={asso.postes}
+                            keywords={asso.keywords}
+                            images={asso.images}
+                            />
+                        )
+                    }
+                )
+            }
+            
         </section>
     );
 
