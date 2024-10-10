@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.81a0ef63.css",
-    "main.js": "/static/js/main.605454ba.js",
-    "static/js/453.5c7afe29.chunk.js": "/static/js/453.5c7afe29.chunk.js",
-    "static/media/mc_repas.jpeg": "/static/media/mc_repas.1ea4143baaddbc148682.jpeg",
-    "static/media/mc_bureau.jpeg": "/static/media/mc_bureau.a2c15eaf042cbe2c824a.jpeg",
-    "static/media/jnm_feu.jpg": "/static/media/jnm_feu.49210f19aed49a68b77a.jpg",
-    "static/media/jnm_serre.jpg": "/static/media/jnm_serre.acd5cc34a3d9f00cd9a7.jpg",
-    "static/media/jnm_cracheur.jpg": "/static/media/jnm_cracheur.bb48d8697b878cba1975.jpg",
-    "static/media/amigo_forum.jpeg": "/static/media/amigo_forum.d47d9d9623ce4bd331da.jpeg",
-    "static/media/amigo_billard.jpeg": "/static/media/amigo_billard.387311ddb24c5118c6f2.jpeg",
-    "static/media/amigo_bruxelles.jpeg": "/static/media/amigo_bruxelles.3afab10888255bdbd5a5.jpeg",
-    "static/media/Working-rafiki.png": "/static/media/Working-rafiki.584e5f4e42c06fc9f7c0.png",
-    "static/media/volleyball-pic-removebg-preview.png": "/static/media/volleyball-pic-removebg-preview.15dc28bfb153f4f575da.png",
-    "static/media/new-Instagram-logo-white-glyph.png": "/static/media/new-Instagram-logo-white-glyph.ed5ed57e98d053cf1e55.png",
-    "static/media/memoji.png": "/static/media/memoji.c75b613c836f72b404b7.png",
-    "static/media/competency.png": "/static/media/competency.22c0e24859409d6a0201.png",
-    "static/media/hand.png": "/static/media/hand.aef9bb35370b3f33891d.png",
-    "index.html": "/index.html",
-    "main.81a0ef63.css.map": "/static/css/main.81a0ef63.css.map",
-    "main.605454ba.js.map": "/static/js/main.605454ba.js.map",
-    "453.5c7afe29.chunk.js.map": "/static/js/453.5c7afe29.chunk.js.map"
+    "main.css": "/baptistecaron/static/css/main.81a0ef63.css",
+    "main.js": "/baptistecaron/static/js/main.d13552b5.js",
+    "static/js/453.5c7afe29.chunk.js": "/baptistecaron/static/js/453.5c7afe29.chunk.js",
+    "static/media/mc_repas.jpeg": "/baptistecaron/static/media/mc_repas.1ea4143baaddbc148682.jpeg",
+    "static/media/mc_bureau.jpeg": "/baptistecaron/static/media/mc_bureau.a2c15eaf042cbe2c824a.jpeg",
+    "static/media/jnm_feu.jpg": "/baptistecaron/static/media/jnm_feu.49210f19aed49a68b77a.jpg",
+    "static/media/jnm_serre.jpg": "/baptistecaron/static/media/jnm_serre.acd5cc34a3d9f00cd9a7.jpg",
+    "static/media/jnm_cracheur.jpg": "/baptistecaron/static/media/jnm_cracheur.bb48d8697b878cba1975.jpg",
+    "static/media/amigo_forum.jpeg": "/baptistecaron/static/media/amigo_forum.d47d9d9623ce4bd331da.jpeg",
+    "static/media/amigo_billard.jpeg": "/baptistecaron/static/media/amigo_billard.387311ddb24c5118c6f2.jpeg",
+    "static/media/amigo_bruxelles.jpeg": "/baptistecaron/static/media/amigo_bruxelles.3afab10888255bdbd5a5.jpeg",
+    "static/media/Working-rafiki.png": "/baptistecaron/static/media/Working-rafiki.584e5f4e42c06fc9f7c0.png",
+    "static/media/volleyball-pic-removebg-preview.png": "/baptistecaron/static/media/volleyball-pic-removebg-preview.15dc28bfb153f4f575da.png",
+    "static/media/new-Instagram-logo-white-glyph.png": "/baptistecaron/static/media/new-Instagram-logo-white-glyph.ed5ed57e98d053cf1e55.png",
+    "static/media/memoji.png": "/baptistecaron/static/media/memoji.c75b613c836f72b404b7.png",
+    "static/media/competency.png": "/baptistecaron/static/media/competency.22c0e24859409d6a0201.png",
+    "static/media/hand.png": "/baptistecaron/static/media/hand.aef9bb35370b3f33891d.png",
+    "index.html": "/baptistecaron/index.html",
+    "main.81a0ef63.css.map": "/baptistecaron/static/css/main.81a0ef63.css.map",
+    "main.d13552b5.js.map": "/baptistecaron/static/js/main.d13552b5.js.map",
+    "453.5c7afe29.chunk.js.map": "/baptistecaron/static/js/453.5c7afe29.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81a0ef63.css",
-    "static/js/main.605454ba.js"
+    "static/js/main.d13552b5.js"
   ]
 }
