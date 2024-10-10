@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/baptistecaron/static/css/main.53588a1f.css",
-    "main.js": "/baptistecaron/static/js/main.ac911312.js",
-    "static/js/787.ee7fba46.chunk.js": "/baptistecaron/static/js/787.ee7fba46.chunk.js",
+    "main.js": "/baptistecaron/static/js/main.025d4497.js",
+    "static/js/453.5c7afe29.chunk.js": "/baptistecaron/static/js/453.5c7afe29.chunk.js",
     "static/media/mc_repas.jpeg": "/baptistecaron/static/media/mc_repas.1ea4143baaddbc148682.jpeg",
     "static/media/mc_bureau.jpeg": "/baptistecaron/static/media/mc_bureau.a2c15eaf042cbe2c824a.jpeg",
     "static/media/jnm_feu.jpg": "/baptistecaron/static/media/jnm_feu.49210f19aed49a68b77a.jpg",
@@ -19,11 +19,11 @@
     "static/media/hand.png": "/baptistecaron/static/media/hand.aef9bb35370b3f33891d.png",
     "index.html": "/baptistecaron/index.html",
     "main.53588a1f.css.map": "/baptistecaron/static/css/main.53588a1f.css.map",
-    "main.ac911312.js.map": "/baptistecaron/static/js/main.ac911312.js.map",
-    "787.ee7fba46.chunk.js.map": "/baptistecaron/static/js/787.ee7fba46.chunk.js.map"
+    "main.025d4497.js.map": "/baptistecaron/static/js/main.025d4497.js.map",
+    "453.5c7afe29.chunk.js.map": "/baptistecaron/static/js/453.5c7afe29.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.53588a1f.css",
-    "static/js/main.ac911312.js"
+    "static/js/main.025d4497.js"
   ]
 }
