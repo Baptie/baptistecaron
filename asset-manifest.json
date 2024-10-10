@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/baptistecaron/static/css/main.116da730.css",
+    "main.css": "/baptistecaron/static/css/main.81a0ef63.css",
     "main.js": "/baptistecaron/static/js/main.d13552b5.js",
     "static/js/453.5c7afe29.chunk.js": "/baptistecaron/static/js/453.5c7afe29.chunk.js",
     "static/media/mc_repas.jpeg": "/baptistecaron/static/media/mc_repas.1ea4143baaddbc148682.jpeg",
@@ -18,12 +18,12 @@
     "static/media/competency.png": "/baptistecaron/static/media/competency.22c0e24859409d6a0201.png",
     "static/media/hand.png": "/baptistecaron/static/media/hand.aef9bb35370b3f33891d.png",
     "index.html": "/baptistecaron/index.html",
-    "main.116da730.css.map": "/baptistecaron/static/css/main.116da730.css.map",
+    "main.81a0ef63.css.map": "/baptistecaron/static/css/main.81a0ef63.css.map",
     "main.d13552b5.js.map": "/baptistecaron/static/js/main.d13552b5.js.map",
     "453.5c7afe29.chunk.js.map": "/baptistecaron/static/js/453.5c7afe29.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.116da730.css",
+    "static/css/main.81a0ef63.css",
     "static/js/main.d13552b5.js"
   ]
 }
