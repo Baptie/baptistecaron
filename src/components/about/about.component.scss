@@ -1,0 +1,38 @@
+.presentation{
+    height: 100vh;
+    padding: 3rem;
+    font-family: "Afacad Flux", sans-serif;
+    font-weight: 400;
+    font-size:1.25rem
+}
+.texteSection{
+   
+}
+.presentationContent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+
+
+}
+.volleyAsset{
+    width: 25%;
+    @media screen and (max-width :600px) {
+        width: 60%;
+    }
+}
+.diplomeContainer{
+    display: flex;
+    align-items: center;
+}
+.iconDiplome{
+    height: 3rem;
+    margin-inline: 3rem;
+
+}
+.labelDiplome{
+
+}

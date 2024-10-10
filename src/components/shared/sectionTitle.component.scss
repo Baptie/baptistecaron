@@ -1,0 +1,10 @@
+.sectionTitle{
+    font-family: "Afacad Flux", sans-serif;
+    font-weight: 900;
+    font-size: 5rem;
+    @media screen and (max-width:1024px) {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+}

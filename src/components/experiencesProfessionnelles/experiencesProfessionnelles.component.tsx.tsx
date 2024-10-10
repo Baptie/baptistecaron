@@ -1,8 +1,9 @@
 import {useTranslation} from "react-i18next";
-import '../../styles/experiencesProfessionnelles.scss';
-import sopra_logo from "../../assets/logos/logo-sopra-blanc.png"
 import SectionTitleComponent from "../shared/sectionTitle.component";
-
+import './experiencesProfessionnelles.component.scss';
+import experiences from '../../data/experiences.json'
+import ExperienceComponent from "./experience/experience.component";
+import work from '../../assets/baptie/Working-rafiki.png'
 export default function ExperiencePro() {
 
     function goToSopra(){
@@ -14,28 +15,29 @@ export default function ExperiencePro() {
     return (
         <section id="parcoursPro" className="parcoursPro">
             <SectionTitleComponent titre={t('experience_pro_libelle')}/>
-            <div className="contentSectAsso">
-
-                <div className="contentDivAsso" onClick={goToSopra}>
-                    <div className="imagesAsso" id="amigo" >
-                        <img src={sopra_logo} alt="Logo Sopra" id="amigo"/>
-                    </div>
-                    <div className="descAssoBloc">
-                        <h2 className="titleDescAsso">Développeur Fullstack</h2>
-                        <p className="descAmigo">{t('amigo_desc')}</p>
-                    </div>
-                </div>
-
-                <div className="contentDivAsso"  onClick={goToSopra}>
-                    <div className="imagesAsso" id="jnm">
-                        <img src={sopra_logo}  alt="Logo Sopra" id="jnm"/>
-                    </div>
-                    <div className="descAssoBloc">
-                        <h2 className="titleDescAsso">Ingénieur d'Études et de Développement</h2>
-                        <p className="descAmigo">{t('jnm_desc')}</p>
-                    </div>
-                </div>
+            <div className="expProContainer">
+                {
+                    experiences.experiences.map(
+                        experience => {
+                            return(
+                                <ExperienceComponent
+                                key={experience.id}
+                                id={experience.id}
+                                description={experience.description}
+                                keywords={experience.keywords}
+                                name={experience.name}
+                                date={experience.date}
+                                />
+                            )
+                        }
+                    )
+                    
+                }
             </div>
+            <div className="workAssetContainer">
+                <img src={work} alt="" className="workAsset" />
+            </div>
+            
 
         </section>
     );

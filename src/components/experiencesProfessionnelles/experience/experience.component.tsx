@@ -1,0 +1,55 @@
+import './experience.component.scss';
+
+interface ExperienceComponentProp{
+    id:string,
+    name:string,
+    keywords:string[],
+    description:string[],
+    date:string
+
+}
+const ExperienceComponent : React.FC<ExperienceComponentProp> = (prop:ExperienceComponentProp) => {
+
+    return(
+        <div className={`experienceContainer`}>
+            <span className={`dateExpPro`}>
+                {prop.date}
+            </span>
+
+            <span className={`nameExpPro`}>
+                {prop.name}
+            </span>
+            
+            <div className={`keywordsContainerExpPro`}>
+                {
+                    prop.keywords.map(
+                        keyword =>{
+                            return(
+                                <span className={`keywordItemExpPro `}>
+                                    {keyword}
+                                </span>
+                            )
+                        }
+                    )
+                }
+            </div>
+
+            <ul className={`descriptionExpPro`}>
+                {
+                prop.description.map(
+                    item => {
+                        return(
+                            <li className="descriptionExpProItem">
+                                {item}
+                            </li>
+                        )
+                    }
+                )
+                
+                }
+            </ul>
+        </div>
+    )
+}
+
+export default ExperienceComponent;

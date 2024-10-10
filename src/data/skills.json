@@ -1,0 +1,88 @@
+{
+    "categories":
+    [
+        {
+            "name":"Compétences techniques",
+            "skills":[
+                {
+                    "name":"Java",
+                    "level":"Expérimenté"
+                },
+                {
+                    "name":"Spring Boot",
+                    "level":"Expérimenté"
+                },
+                {
+                    "name":"Spring Batch",
+                    "level":"Débutant"
+                },
+                {
+                    "name":"SQL",
+                    "level":"Intermédiaire"
+                },
+                {
+                    "name":"React JS",
+                    "level":"Intermédiaire"
+                }
+            ]
+            
+        },
+        {
+            "name":"Maitrise logicielle",
+            "skills":[
+                {
+                    "name":"Suite office",
+                    "level":"Expérimenté"
+                },
+                {
+                    "name":"Git",
+                    "level":"Expérimenté"
+                },
+                {
+                    "name":"Jira",
+                    "level":"Intermédiaire"
+                },
+                {
+                    "name":"SQL",
+                    "level":"Intermédiaire"
+                },
+                {
+                    "name":"Visual Studio Code",
+                    "level":"Intermédiaire"
+                }
+                ,
+                {
+                    "name":"IntelliJ",
+                    "level":"Expérimenté"
+                },
+                {
+                    "name":"Eclipse",
+                    "level":"Intermédiaire"
+                }
+            ]
+        },
+        {
+            "name":"Compétences transverses",
+            "skills":[
+                {
+                    "name":"Gestion de projet",
+                    "level":"Débutant"
+                },
+                {
+                    "name":"Rédaction de spécifications",
+                    "level":"Intermédiaire"
+                },
+                {
+                    "name":"Méthode Agile SCRUM",
+                    "level":"Débutant"
+                }
+            ]
+        }
+    ],
+    "softskills":[
+        "Rigueur",
+        "Organisation",
+        "Autonomie",
+        "Aisance Relationnelle"
+    ]
+}

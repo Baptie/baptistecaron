@@ -1,0 +1,60 @@
+{
+    "assos":[
+        {
+            "id":"01",
+            "name":"AMIGO Orléans",
+            "postes":[
+                "Chargé de Mission",
+                "Responsable Événementiel"
+            ],
+            "description":"En tant que responsable de l'organisation d'événements pour les étudiants et les entreprises partenaires du réseau local d'Orléans, j'ai assuré la gestion d'équipe ainsi que la gestion de budgets alloués. Ce rôle comprenait la coordination d'activités visant à renforcer les liens entre les étudiants et les entreprises locales, tout en favorisant les échanges professionnels. J'ai également organisé un week-end à Bruxelles pour les étudiants de la MIAGE d'Orléans, une initiative nécessitant une planification rigoureuse. J'ai dirigé les équipes en amont de l'événement, en gérant les aspects logistiques, les plannings et le budget global. Durant l'événement, j'ai fait face à plusieurs imprévus, nécessitant une gestion de crise efficace afin de garantir le bon déroulement du séjour et la satisfaction des participants.",
+            "keywords":[
+                "Événements professionnels",
+                "Événements étudiants"
+                
+            ],
+            "images":[
+                "",
+                ""
+            ]
+        },
+        {
+            "id":"02",
+            "name":"JNM Orléans 2024",
+            "postes":[
+                "Responsable Gala"
+                
+            ],
+            "description":"J'ai pris en charge l'organisation d'un gala pour la filière nationale de MIAGE, un événement d'envergure nécessitant une coordination rigoureuse. Mes responsabilités incluaient la recherche et la gestion des relations avec les prestataires (traiteurs, lieux, services techniques), ainsi que la négociation des conditions afin de garantir un bon rapport qualité-prix tout en respectant le budget alloué. La gestion du budget et la planification de l'événement ont été des aspects clés de mon rôle, avec une attention particulière portée à la bonne répartition des ressources et au respect des délais. Grâce à une organisation minutieuse et une communication fluide avec toutes les parties prenantes, l'événement a été un succès, répondant aux attentes des participants tout en respectant les contraintes financières et logistiques.",
+            "keywords":[
+                "Négociations",
+                "Gestion de prestataires",
+                "Gestion de budget"
+                
+            ],
+            "images":[
+                "",
+                ""
+            ]
+            
+        },
+        {
+            "id":"03",
+            "name":"MIAGE Connection",
+            "postes":[
+                "Responsable Événementiel"
+            
+            ],
+            "description":"En tant que membre actif de la Fédération Nationale des Étudiants de MIAGE, j'ai coordonné l'organisation de plusieurs événements à l'échelle nationale. Ce rôle a impliqué la gestion d'équipe à distance, en veillant à une communication efficace et une collaboration optimale entre les membres dispersés géographiquement. J'ai été responsable de la planification et de la mise en œuvre d'événements divers, nécessitant une gestion rigoureuse des ressources et des délais, tout en m'assurant que chaque aspect logistique était pris en charge. La gestion à distance a renforcé mes compétences en coordination d'équipe virtuelle, en mettant l'accent sur la structuration du travail collaboratif et la gestion des priorités pour garantir le succès des événements.",
+            "keywords":[
+                "Organisation à distance",
+                "Collaboration"
+                
+            ],
+            "images":[
+                "",
+                ""
+            ]
+        }
+    ]
+}

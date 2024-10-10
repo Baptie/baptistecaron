@@ -1,24 +1,41 @@
 import { useTranslation } from "react-i18next";
 import memoji from "../../assets/baptie/memoji.png";
-
+import './cover.component.scss';
+import postes from '../../data/postes.json'
 
 const Cover = () =>{
     const {t} = useTranslation();
     return(
         <section id="accueil" className="accueil">
                     <div className="image-container">
+                        <div className="imgSizeContainer">
                         <img
                             src={memoji}
                             alt="Baptiste PP"
                             className="rounded-image"
                         />
+                        </div>
+
                     </div>
-                    <div className="intitulé">
-                        <p className="nom">Baptiste CARON</p>
-                        <p className="poste">{t('poste')}</p>
+                    <div className="intitule">
+                        <div className="nom">Baptiste CARON</div>
+                        <p className="poste">
+                            {
+                                postes.postes.map(
+                                    poste =>{
+                                        return(
+                                            <span className="posteSpan">
+                                                {poste}
+                                            </span>
+                                        )
+                                    }
+                                )
+                            }
+                           
+                        </p>
                     </div>
 
-                </section>
+        </section>
     )
 }
 

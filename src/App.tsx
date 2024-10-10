@@ -1,38 +1,43 @@
 import React from 'react';
 import './styles/app.scss';
-import './styles/effects.scss';
 
-import Footer from "./components/footer/Footer";
 import Competences from "./components/competences/competences.component";
 import ExperiencePro from "./components/experiencesProfessionnelles/experiencesProfessionnelles.component.tsx";
-import School from "./components/school/school.component";
-import Starfield from "./components/shared/starfield.component";
 import Associatif from "./components/associatif/associatif.component";
-
 import Navbar from './components/navbar/navbar.component';
 import Cover from './components/cover/cover.component';
+import About from './components/about/about.component';
+import Footer from './components/footer/footer.component';
+
 
 function App() {
     return (
-        <div className="App">
-            
-            <header className="framer-top"></header>
-
+        <div className='app'>
             <Navbar/>
-
-            <Starfield/>
-
-            <div className="content">
+            <div className="coverSection">
                 <Cover/>
-                <School/>
-                <ExperiencePro/>
-                <Competences/>
-                <Associatif/>
+
             </div>
 
-            <div className="framer-bot"></div>
+            <div className="aboutSection">
+                <About/>
+            </div>
 
-            <Footer/>
+            <div className="competencesSection">
+                <Competences/>
+            </div>
+
+            <div className="experiencesSection">
+                <ExperiencePro/>
+            </div>
+
+            <div className="assoSection">
+                <Associatif/>
+            </div>
+            <div className="footer">
+                <Footer/>
+            </div>
+
         </div>
     );
 }

@@ -1,4 +1,4 @@
-
+import './sectionTitle.component.scss';
 interface SectionTitleProps{
     titre?:string;
 }
