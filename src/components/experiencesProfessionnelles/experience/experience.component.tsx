@@ -25,7 +25,8 @@ const ExperienceComponent : React.FC<ExperienceComponentProp> = (prop:Experience
                     prop.keywords.map(
                         keyword =>{
                             return(
-                                <span className={`keywordItemExpPro `}>
+                                <span className={`keywordItemExpPro `} 
+                                key={keyword}>
                                     {keyword}
                                 </span>
                             )
@@ -39,7 +40,8 @@ const ExperienceComponent : React.FC<ExperienceComponentProp> = (prop:Experience
                 prop.description.map(
                     item => {
                         return(
-                            <li className="descriptionExpProItem">
+                            <li className="descriptionExpProItem"
+                            key={item}>
                                 {item}
                             </li>
                         )

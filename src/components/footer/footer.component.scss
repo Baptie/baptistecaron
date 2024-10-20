@@ -1,14 +1,26 @@
-.footer{
-    height: 40vh;
+.footerContent{
+    height: 30vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    background-color: #bdb6a6;
+    border: none;
 
 }
 
 .iconeReseau{
-    height: 4rem;
+    height: 2rem;
     padding: 1rem;
+    
+    
 }
+.lienReseau{
+    :hover{
+        filter: brightness(0.85);
+    }
+}
+.copyright{
+    font-family: "Afacad Flux", sans-serif;
+    margin-top: 1rem;
 
+}

@@ -22,9 +22,6 @@ const AssociatifComponent : React.FC<AssoComponentProp> = (prop:AssoComponentPro
  
     return(
         <div className={`experienceAssociatifContainer`}>
-            <span className={`id  ${opposite ? "oppositeAlign" :''}`}>
-                {prop.id}
-            </span>
 
             <span className={`name  ${opposite ? "oppositeAlign" :''}`}>
                 {prop.name}
@@ -35,7 +32,7 @@ const AssociatifComponent : React.FC<AssoComponentProp> = (prop:AssoComponentPro
                     prop.keywords.map(
                         keyword =>{
                             return(
-                                <span className={`keywordItem `}>
+                                <span className={`keywordItem `} key={keyword}>
                                     {keyword}
                                 </span>
                             )

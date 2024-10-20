@@ -43,10 +43,6 @@
                     "level":"Intermédiaire"
                 },
                 {
-                    "name":"SQL",
-                    "level":"Intermédiaire"
-                },
-                {
                     "name":"Visual Studio Code",
                     "level":"Intermédiaire"
                 }
@@ -75,6 +71,10 @@
                 {
                     "name":"Méthode Agile SCRUM",
                     "level":"Débutant"
+                },
+                {
+                    "name":"Définition & Expression du besoin",
+                    "level":"Intermédiaire"
                 }
             ]
         }

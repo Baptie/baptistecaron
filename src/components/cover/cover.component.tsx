@@ -22,7 +22,7 @@ const Cover = () =>{
                                 postes.postes.map(
                                     poste =>{
                                         return(
-                                            <span className="posteSpan">
+                                            <span className="posteSpan" key={poste}>
                                                 {poste}
                                             </span>
                                         )

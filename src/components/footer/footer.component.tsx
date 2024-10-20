@@ -9,7 +9,7 @@ export default function Footer() {
 
     const currentYear : number = new Date().getFullYear();
     return (
-        <div className="footer">
+        <div className="footerContent">
             <div className="copyright">
                 © Copyright - Baptiste CARON - {currentYear}
             </div>
@@ -18,11 +18,11 @@ export default function Footer() {
                     <img className="iconeReseau" src={github} alt="github"/>
                 </a>
 
-                <a className="lienReseau" href="https://www.instagram.com/baptieleplusbeauptn/">
+                <a className="lienReseau" href="https://www.instagram.com/baptiecrn/">
                     <img className="iconeReseau" src={instagram} alt="instagram"/>
                 </a>
 
-                <a className="lienReseau" href="www.linkedin.com/in/caron-baptiste">
+                <a className="lienReseau" href="https://www.linkedin.com/in/caron-baptiste">
                     <img className="iconeReseau" src={linkedin} alt="linkedin"/>
                 </a>
 
