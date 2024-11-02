@@ -1,6 +1,6 @@
 import {useTranslation} from "react-i18next";
 import './associatif.component.scss';
-import SectionTitleComponent from "../shared/sectionTitle.component";
+import SectionTitleComponent from "../shared/sectionTitle/sectionTitle.component";
 import asso from '../../data/asso.json'
 import AssociatifComponent from "./associatifComponent/associatifComponent.component";
 

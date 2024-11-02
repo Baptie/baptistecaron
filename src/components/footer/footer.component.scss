@@ -1,9 +1,11 @@
+@import '../../variables.scss';
+
 .footerContent{
     height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #bdb6a6;
+    background-color: $taupe;
     border: none;
 
 }
@@ -20,7 +22,7 @@
     }
 }
 .copyright{
-    font-family: "Afacad Flux", sans-serif;
+    font-family: $main-font;
     margin-top: 1rem;
 
 }

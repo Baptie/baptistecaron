@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@import '../../variables.scss';
 .accueil{
     height: 100vh;
     display: flex;
@@ -31,7 +31,7 @@
 
 }
 .intitule{
-    font-family: "Afacad Flux", sans-serif;
+    font-family: $main-font;
     font-optical-sizing: auto;
     display: flex;
     flex-direction: column;
@@ -53,7 +53,7 @@
   /* The typewriter cursor effect */
 @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: orange; }
+    50% { border-color: $orange; }
   }
 .nom{
     display: inline-block;
@@ -62,7 +62,7 @@
     font-weight: 900;
     margin: 0;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .4em solid orange; /* The typwriter cursor */
+    border-right: .4em solid $orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 1 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
@@ -86,7 +86,7 @@
     display: flex;
     
     gap: 1rem;
-    border-block: 3px solid black;
+    border-block: 3px solid $black;
     padding :0.3rem;
     @media screen and (max-width :1024px) {
         flex-direction: column;

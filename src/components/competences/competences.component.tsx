@@ -1,6 +1,6 @@
 import React from "react";
 import {useTranslation} from "react-i18next";
-import SectionTitleComponent from '../shared/sectionTitle.component';
+import SectionTitleComponent from '../shared/sectionTitle/sectionTitle.component';
 import './competences.component.scss'
 import CategorySkill from './categorySkill/categorySkill.component';
 import skills from '../../data/skills.json'

@@ -1,5 +1,7 @@
+@import '../../../variables.scss';
+
 .sectionTitle{
-    font-family: "Afacad Flux", sans-serif;
+    font-family: $main-font;
     font-weight: 900;
     font-size: 5rem;
     @media screen and (max-width:1024px) {

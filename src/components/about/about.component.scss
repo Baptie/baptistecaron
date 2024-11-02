@@ -1,12 +1,11 @@
+@import '../../variables.scss';
+
 .presentation{
     min-height: 100vh;
     padding: 3rem;
-    font-family: "Afacad Flux", sans-serif;
+    font-family: $main-font;
     font-weight: 400;
     font-size:1.25rem
-}
-.texteSection{
-   
 }
 .presentationContent{
     width: 100%;
@@ -31,8 +30,5 @@
 .iconDiplome{
     height: 3rem;
     margin-inline: 3rem;
-
-}
-.labelDiplome{
 
 }

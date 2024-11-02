@@ -1,33 +1,35 @@
+@import '../../variables.scss';
+
 .navbarContainer{
     @media screen and (max-width :600px) {
         display: none;
     }
-    width: 100%;
     justify-content: center;
     display: flex;
+    z-index: 2;
     position: fixed;
     bottom: 1rem;
-    z-index: 2;
+
 }
 .navbar{
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: $pure-white-90perc;
     display: flex;
     justify-content: center;
-    height: 3rem;
-    padding: 1rem;
-    border-radius: 20px;
+    column-gap: 2rem;
+    padding-inline: 2rem;
+    border-radius: 50px;
 }
 .itemNavbar{
-    width: 5rem;
+    width: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10rem;
 }
 .itemNavbar:hover{
-    background-color: rgb(0, 0, 0,0.3);
-    transform: scale(0.9);
+    transform: scale(0.90);
     transition: ease-in-out 0.2s;
+    filter: opacity(0.5);
 }
 
 .iconNavbar{
@@ -35,4 +37,5 @@
     width: auto;
     border-radius: 2rem;
     overflow: visible;
+    padding: 1rem;
 }

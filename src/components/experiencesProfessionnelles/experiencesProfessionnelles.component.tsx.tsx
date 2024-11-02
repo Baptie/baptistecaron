@@ -1,5 +1,5 @@
 import {useTranslation} from "react-i18next";
-import SectionTitleComponent from "../shared/sectionTitle.component";
+import SectionTitleComponent from "../shared/sectionTitle/sectionTitle.component";
 import './experiencesProfessionnelles.component.scss';
 import experiences from '../../data/experiences.json'
 import ExperienceComponent from "./experience/experience.component";

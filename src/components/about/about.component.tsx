@@ -1,5 +1,5 @@
 import { t } from "i18next";
-import SectionTitleComponent from "../shared/sectionTitle.component";
+import SectionTitleComponent from "../shared/sectionTitle/sectionTitle.component";
 import './about.component.scss';
 import volleyNoBg from '../../assets/baptie/volleyball-pic-removebg-preview.png'
 import hat from '../../assets/navbar/graduation-cap.png';

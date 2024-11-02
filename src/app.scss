@@ -1,0 +1,25 @@
+@import './variables.scss';
+
+body{
+    background-color: $cream;
+}
+.app{
+   
+}
+
+.appNavbar{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.appContent{   
+    @media screen and (max-width :300px) {
+        display: none ;
+    }
+    justify-self: end;
+    width: 100%;
+    
+}

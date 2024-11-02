@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/app.scss';
+import './app.scss';
 
 import Competences from "./components/competences/competences.component";
 import ExperiencePro from "./components/experiencesProfessionnelles/experiencesProfessionnelles.component.tsx";
@@ -12,33 +12,39 @@ import Footer from './components/footer/footer.component';
 
 function App() {
     return (
-        <div className='app'>
-            <Navbar/>
-            <div className="coverSection">
-                <Cover/>
-
+        <div className="app">
+            <div className="appNavbar">
+                <Navbar/>
             </div>
+            
+            <div className='appContent'>
+           
+                <div className="coverSection">
+                    <Cover/>
 
-            <div className="aboutSection">
-                <About/>
-            </div>
+                </div>
 
-            <div className="competencesSection">
-                <Competences/>
-            </div>
+                <div className="aboutSection">
+                    <About/>
+                </div>
 
-            <div className="experiencesSection">
-                <ExperiencePro/>
-            </div>
+                <div className="competencesSection">
+                    <Competences/>
+                </div>
 
-            <div className="assoSection">
-                <Associatif/>
-            </div>
-            <div className="footer">
-                <Footer/>
-            </div>
+                <div className="experiencesSection">
+                    <ExperiencePro/>
+                </div>
 
+                <div className="assoSection">
+                    <Associatif/>
+                </div>
+                <div className="footer">
+                    <Footer/>
+                </div>
         </div>
+        </div>
+        
     );
 }
 

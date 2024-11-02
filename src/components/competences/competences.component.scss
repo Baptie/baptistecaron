@@ -1,4 +1,5 @@
 .competences{
+    min-height: 100vh;
     padding: 3rem;
     display: flex;
     flex-direction: column;
@@ -19,6 +20,5 @@
     width: 100%;
     column-gap: 3rem;
     row-gap: 3rem;
-    padding-block: 6rem;
     justify-content: center;
 }
