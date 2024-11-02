@@ -1,16 +1,15 @@
 ## 📝 À Propos
 Site vitrine créé par Baptiste CARON. 
 
-![Home Page](public/screenshots/home_page.png)
 ## 🎨 Color Palette
 
-- ![#FFFFFF](https://placehold.co/15x15/FFFFFF/FFFFFF.png) `#FFFFFF`
-- ![#7FB6D5](https://placehold.co/15x15/7FB6D5/7FB6D5.png) `#7FB6D5`
-- ![#268CF5](https://placehold.co/15x15/268CF5/268CF5.png) `#268CF5`
-- ![#8A51A9](https://placehold.co/15x15/8A51A9/8A51A9.png) `#8A51A9`
-- ![#0b0f35](https://placehold.co/15x15/0b0f35/0b0f35.png) `#0B0F35`
-- ![#070b23](https://placehold.co/15x15/070b23/070b23.png) `#070B23`
 - ![#000000](https://placehold.co/15x15/000000/000000.png) `#000000`
+- ![#BDB6A6](https://placehold.co/15x15/BDB6A6/BDB6A6.png) `#BDB6A6`
+- ![#EDE7DB](https://placehold.co/15x15/EDE7DB/EDE7DB.png) `#EDE7DB`
+- ![#FFFFFF](https://placehold.co/15x15/FFFFFF/FFFFFF.png) `#FFFFFF`
+- ![#FFA500](https://placehold.co/15x15/FFA500/FFA500.png) `#FFA500`
+- ![#2A2D9B](https://placehold.co/15x15/2A2D9B/2A2D9B.png) `#2A2D9B`
+
 
 ## 👨🏻‍💻 Contributors
 
