@@ -1,8 +1,8 @@
 import { t } from "i18next";
 import SectionTitleComponent from "../shared/sectionTitle/sectionTitle.component";
 import './about.component.scss';
-import volleyNoBg from '../../assets/baptie/volleyball-pic-removebg-preview.png'
-import hat from '../../assets/navbar/graduation-cap.png';
+import volleyNoBg from '../../assets/baptie/volleyball-pic-removebg-preview.png';
+import mallet from '../../assets/icons/mallet-icon.png';
 
 const About = () => {
     return (
@@ -10,10 +10,10 @@ const About = () => {
             <SectionTitleComponent titre={t('a_propos_libelle')}/>
             <div className="presentationContent">
                 <div className="diplomeContainer">
-                    <img src={hat} alt="" className="iconDiplome" />
-                    <span className="labelDiplome">
+                    <img src={mallet} alt="" className="iconCurrentJob" />
+                    <span className="labelCurrentJob">
                         {
-                            t('master')
+                            t('current_job')
                         }
                     </span>
                 </div>

@@ -12,14 +12,12 @@ const ExperienceComponent : React.FC<ExperienceComponentProp> = (prop:Experience
 
     return(
         <div className={`experienceContainer`}>
+              <span className={`nameExpPro`}>
+                {prop.name}
+            </span>
             <span className={`dateExpPro`}>
                 {prop.date}
             </span>
-
-            <span className={`nameExpPro`}>
-                {prop.name}
-            </span>
-            
             <div className={`keywordsContainerExpPro`}>
                 {
                     prop.keywords.map(
