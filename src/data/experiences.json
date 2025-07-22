@@ -2,7 +2,7 @@
     "experiences":[
         {
             "id":"01",
-            "date":"Avril 2022 à Juin 2022 (3 mois)",
+            "date":"Avril 2022 à Juin 2022",
             "name":"Développeur Java / Business Analyst",
             "keywords":[
                 "Spring Boot",
@@ -17,7 +17,7 @@
          }, 
         {
             "id":"02",
-            "date":"Juillet 2022 à Juin 2024 (1 an et 11 mois)",
+            "date":"Juillet 2022 à Juin 2024",
             "name":"Développeur JEE",
             "keywords":[
                 "Spring Framework",
@@ -34,7 +34,7 @@
         },
         {
             "id":"03",
-            "date":"Juin 2024 à Août 2024 (3 mois)",
+            "date":"Juin 2024 à Août 2024",
             "name":"Développeur React",
             "keywords":[
                 "React JS",
@@ -46,6 +46,22 @@
                 "Réalisation d'une application de souscription à une assurance vie en ReactJS et Spring Boot",
                 "Proposition de solutions techniques",
                 "Travail en framework Agile (SCRUM)"
+            ] 
+        },
+        {
+            "id":"04",
+            "date":"Novembre 2024 - Aujourd'hui",
+            "name":"Chef de projets",
+            "keywords":[
+                "Pilotage",
+                "Coordination"
+            ],
+            "description":
+            [
+                "Pilotage et conduite de divers projets",
+                "SI RH",
+                "Coordination d'équipes",
+                "Appel d'offres"
             ] 
         }
     ]
