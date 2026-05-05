@@ -1,10 +1,10 @@
 @import './variables.scss';
 
 body{
-    background-color: $cream;
+    background-color: $white;
 }
 .app{
-   
+   font-family: $main-font;
 }
 
 .appNavbar{
@@ -22,4 +22,9 @@ body{
     justify-self: end;
     width: 100%;
     
+}
+section{
+    min-height: 75vh;
+    margin-block: 2.5rem;
+    padding-inline: 4rem;
 }

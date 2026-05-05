@@ -1,7 +1,82 @@
 {
-    "postes":[
-        "Développement Web",
-        "Gestion Événementielle",
-        "Ingénieur Logiciel"
+    "postes": [
+        {
+            "id": 0,
+            "type": "pro",
+            "poste": "Chef de projet",
+            "societe": "Acensi",
+            "date_debut": "2024",
+            "date_fin": "Aujourd'hui",
+            "img_url": "/img/acensi_logo.png",
+            "img_alt": "Logo ACENSI",
+            "description": "Pilotage de multiples projets d'enjeu au sein du Crédit Agricole Titres.",
+            "color": "#004e9b",
+            "color2": "#ffffff"
+        },
+        {
+            "id": 1,
+            "type": "pro",
+            "poste": "Développeur Fullstack",
+            "societe": "Sopra Steria",
+            "date_debut": "2022",
+            "date_fin": "2024",
+            "img_url": "/img/soprasteria_logo.png",
+            "img_alt": "Logo Sopra Steria",
+            "description": "Maintien de plusieurs applications centrales au SI de Société Générale Assurances. Développement d'une application web de souscription à une assurance vie",
+            "color": "#ce022a",
+            "color2": "#ef7c00"
+        },
+        {
+            "id": 2,
+            "type": "pro",
+            "poste": "Analyste Développeur",
+            "societe": "Sopra Steria",
+            "date_debut": "2022",
+            "date_fin": "2022",
+            "img_url": "/img/soprasteria_logo.png",
+            "img_alt": "Logo Sopra Steria",
+            "description": "Responsable de la refonte totale d'une applicaiton de gestion de projets, du cadrage à la mise en production.",
+            "color": "#ce022a",
+            "color2": "#ef7c00"
+        },
+        {
+            "id": 3,
+            "type": "asso",
+            "poste": "Chargé d'Évènementiel",
+            "societe": "MIAGE Connection",
+            "date_debut": "2024",
+            "date_fin": "2025",
+            "img_url": "/img/miageconnection_logo.png",
+            "img_alt": "Logo MIAGE Connection",
+            "description": "Réalisation de plusieurs évènements majeurs au sein de la Fédération Nationale des MIAGES.",
+            "color": "#2b309b",
+            "color2": "#ffffff"
+        },
+        {
+            "id": 4,
+            "type": "asso",
+            "poste": "Responsable Pôle Gala",
+            "societe": "JNM Orléans 2024",
+            "date_debut": "2023",
+            "date_fin": "2024",
+            "img_url": "/img/jnm_logo.png",
+            "img_alt": "Logo JNM Orléans 2024",
+            "description": "Pilotage de l'organisation d'un gala d'ampleur nationale",
+            "color": "#004d8b",
+            "color2": "#c09b41"
+        },
+        {
+            "id": 5,
+            "type": "asso",
+            "poste": "Chargé d'Évènementiel",
+            "societe": "AMIGO",
+            "date_debut": "2022",
+            "date_fin": "2024",
+            "img_url": "/img/amigo_logo.png",
+            "img_alt": "Logo AMIGO",
+            "description": "Animation d'évènements entre entreprise et étudiants.",
+            "color": "#4c59ab",
+            "color2": "#ffffff"
+        }
     ]
 }

@@ -1,15 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 
 /* Couleurs */
-$cream:#EDE7DB;
-$white:#FFFFFF;
+$gray:#f7f7f7;
+$white:#ffffff;
 $black:#000000;
-$orange:#FFA500;
-$blue:#2A2D9B;
-$taupe:#BDB6A6;
+$blue:#1e4e88;
+$dark-gray:#9f9f9f;
+
+$dark-emerald:#0A3C30;
+$emerald:#00674F;
+$light-emerald:#3d8f7c;
+
+$orange:#000000;
+$cream:white;
+$taupe:#000000;
 
 /* Police */
-$main-font: "Afacad Flux", sans-serif;
+$main-font: "Google Sans Flex", sans-serif;
+$secondary-font: "Space Grotesk", sans-serif;
 
 /* Transparents*/
 $pure-white-0perc:rgba(255, 255, 255, 0);
@@ -18,3 +28,9 @@ $pure-white-90perc:rgba(255, 255, 255, 0.9);
 $pure-white-100perc:rgba(255, 255, 255, 1);
 
 $black-30perc:rgb(0, 0, 0,0.3);
+
+
+
+
+  
+  

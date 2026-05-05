@@ -1,9 +1,9 @@
 {
-  "short_name": "Baptiste CARON",
-  "name": "Site web de Baptiste CARON",
+  "short_name": "Baptiste Caron",
+  "name": "Site web de Baptiste Caron",
   "icons": [
     {
-      "src": "baptie/memoji.png",
+      "src": "img/logobaptie.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/png"
     }

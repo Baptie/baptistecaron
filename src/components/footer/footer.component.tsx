@@ -11,7 +11,7 @@ export default function Footer() {
     return (
         <div className="footerContent">
             <div className="copyright">
-                © Copyright - Baptiste CARON - {currentYear}
+                © Tous droits réservés - Baptiste CARON - {currentYear}
             </div>
             <div className="icons">
                 <a href="https://github.com/Baptie" className="lienReseau">

@@ -1,13 +1,12 @@
 import React from 'react';
 import './app.scss';
 
-import Competences from "./components/competences/competences.component";
-import ExperiencePro from "./components/experiencesProfessionnelles/experiencesProfessionnelles.component.tsx";
-import Associatif from "./components/associatif/associatif.component";
 import Navbar from './components/navbar/navbar.component';
 import Cover from './components/cover/cover.component';
 import About from './components/about/about.component';
 import Footer from './components/footer/footer.component';
+import Projets from './components/projets/projets.component';
+import Parcours from './components/parcours/parcours.component';
 
 
 function App() {
@@ -28,20 +27,19 @@ function App() {
                     <About/>
                 </div>
 
-                <div className="competencesSection">
-                    <Competences/>
+                <div className="projets">
+                    <Projets/>
                 </div>
 
-                <div className="experiencesSection">
-                    <ExperiencePro/>
+                <div className="parcours">
+                    <Parcours/>
                 </div>
-
-                <div className="assoSection">
-                    <Associatif/>
-                </div>
+            
                 <div className="footer">
                     <Footer/>
                 </div>
+
+                
         </div>
         </div>
         

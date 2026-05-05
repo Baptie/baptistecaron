@@ -8,15 +8,8 @@
                 "Responsable Événementiel"
             ],
             "description":"En tant que responsable de l'organisation d'événements pour les étudiants et les entreprises partenaires du réseau local d'Orléans, j'ai assuré la gestion d'équipe ainsi que la gestion de budgets alloués. Ce rôle comprenait la coordination d'activités visant à renforcer les liens entre les étudiants et les entreprises locales, tout en favorisant les échanges professionnels. J'ai également organisé un week-end à Bruxelles pour les étudiants de la MIAGE d'Orléans, une initiative nécessitant une planification rigoureuse. J'ai dirigé les équipes en amont de l'événement, en gérant les aspects logistiques, les plannings et le budget global. Durant l'événement, j'ai fait face à plusieurs imprévus, nécessitant une gestion de crise efficace afin de garantir le bon déroulement du séjour et la satisfaction des participants.",
-            "keywords":[
-                "Événements professionnels",
-                "Événements étudiants"
-                
-            ],
-            "images":[
-                "",
-                ""
-            ]
+            "label":"Vie étudiante",
+            "image": "/asso/amigo_bruxelles.jpeg"
         },
         {
             "id":"02",
@@ -32,11 +25,8 @@
                 "Gestion de budget"
                 
             ],
-            "images":[
-                "",
-                ""
-            ]
-            
+            "label":"Gala",
+            "image": "/asso/jnm_cracheur.jpg"
         },
         {
             "id":"03",
@@ -51,10 +41,9 @@
                 "Collaboration"
                 
             ],
-            "images":[
-                "",
-                ""
-            ]
+            "label":"Événements nationaux",
+            "image": "/asso/mc_bureau.jpeg"
+                
         }
     ]
 }
