@@ -64,11 +64,10 @@ const Navbar = () => {
 
               <a
                 href="http://linkedin.com/in/caron-baptiste/"
-                target="_blank"
                 className="contactItem"
               >
                 <img
-                  src="/img/linkedin_logo.png"
+                  src={process.env.PUBLIC_URL + "/img/linkedin_logo.png"}
                   alt="Logo LinkedIn"
                   className="imgContactIcon"
                 />
@@ -77,11 +76,10 @@ const Navbar = () => {
 
               <a
                 href="https://www.malt.fr/profile/baptistecaron"
-                target="_blank"
                 className="contactItem"
               >
                 <img
-                  src="/img/malt_logo.png"
+                  src={process.env.PUBLIC_URL + "/img/malt_logo.png"}
                   alt="Logo LinkedIn"
                   className="imgContactIcon"
                 />

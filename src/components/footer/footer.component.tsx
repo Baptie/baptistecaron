@@ -1,7 +1,6 @@
 import React from "react";
 
 import github from "../../assets/icons/github-icon-white-6.jpg.png";
-import instagram from "../../assets/icons/new-Instagram-logo-white-glyph.png";
 import linkedin from "../../assets/icons/white-linkedin-icon-png-8.jpg.png";
 
 import "./footer.component.scss";
