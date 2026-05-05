@@ -1,0 +1,51 @@
+@import '../../variables.scss';
+
+.parcours{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.parcoursContainer{
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+    padding-inline: 4rem;
+}
+.parcoursPro, .parcoursAsso{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex:1;
+
+}
+.parcoursTitle{
+    display: flex;
+
+  
+}
+.texteParcoursTitle{
+    width: 50%;
+    text-align: center;
+}
+.titreParcoursItem{
+    margin: 0.5rem;
+    font-size: 1.7rem;
+
+}
+.subParcoursItem{
+    margin: 0;
+    font-family: $secondary-font;
+    color: $light-emerald;
+    font-size: 0.9rem;
+}
+
+.breakLineParcours{
+    position: relative;
+    width: 1px;
+    height: 40vh;
+    background-color: $dark-gray;
+}
+
+

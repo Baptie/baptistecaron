@@ -1,0 +1,45 @@
+:root{
+    --gap: 5rem;
+    --speed: 28s; /* durée d’un cycle */
+    --h: 36px;
+  }
+.carouselImage{
+    height: var(--h);
+  width: auto;
+  flex: 0 0 auto;                   /* important pour le ruban */
+  object-fit: contain;
+  display: block;
+}
+
+.carousel{
+    overflow: hidden;
+  /* option : fondu sur les bords (blanc = visible) */
+  -webkit-mask-image: linear-gradient(90deg, #0000, #fff 15%, #fff 85%, #0000);
+          mask-image: linear-gradient(90deg, #0000, #fff 15%, #fff 85%, #0000);
+   width: 50%;
+   align-self: center;
+}
+
+.carousel-inner{
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+    width: max-content;               /* s’adapte au contenu */
+    will-change: transform;
+    animation: scroll var(--speed) linear infinite;
+}
+
+.carousel-item{
+
+    
+}
+
+@keyframes scroll{
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* on a dupliqué => -50% suffit */
+  }
+  
+  /* Accessibilité */
+  @media (prefers-reduced-motion: reduce){
+    .track{ animation: none; }
+  }

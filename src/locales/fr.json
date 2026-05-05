@@ -1,12 +1,13 @@
 {
   "accueil_libelle": "Accueil",
   "a_propos_libelle": "À Propos",
+  "projets_libelle": "Mes projets",
   "parcours_scolaire_libelle": "Parcours scolaire",
-  "experience_pro_libelle": "Expériences professionnelles",
+  "experience_pro_libelle": "Projets",
   "competences_libelle": "Compétences",
   "hobbies_libelle": "Loisirs",
   "poste": "Ingénieur Logiciel",
-  "presentation": "Passionné par les nouvelles technologies, je combine rigueur, sens de l’organisation et goût du travail en équipe pour faire avancer les projets de manière structurée et collaborative. Mon expérience en développement web et mes engagements associatifs m’ont permis de développer de solides compétences en gestion de projet et de construire un réseau actif à l’échelle nationale. Curieux, polyvalent et investi, je m’intéresse aussi à l’astronomie, à la musique et pratique le volleyball en club, ce qui nourrit mon esprit d’équipe et ma persévérance. Toujours motivé par les défis, j’apprécie de contribuer à des projets ambitieux et porteurs de sens.",
+  "presentation": "Chef de projet passionné par la conduite et la réussite de projets, je m’appuie sur une expérience solide acquise aussi bien en milieu professionnel qu’associatif, notamment dans l’organisation d’événements d’envergure. Sportif engagé, le volleyball m’a appris la rigueur, l’esprit d’équipe et la persévérance. Curieux et créatif, j’ai participé à la conception de sites web, avec un intérêt particulier pour la création d’expériences utilisateur claires et intuitives, alliant esthétique et efficacité.",
   "univ": "Université d'Orléans",
   "licence": "Licence MIAGE",
   "licence_details": "Méthodes Informatiques Appliquées à la Gestion des Entreprises",
@@ -30,5 +31,5 @@
   "amigo_desc": "Impliqué dans 2 mandats consécutifs, d'abord en tant que Vice-Président en charge de l'évènementiel, et ensuite en tant que Chargé de Mission Anniversaire. J'ai participé à l'organisation de nombreux évènements (Conférences, Billards, Afterworks, ... ).",
   "jnm_desc": "Responsable du pôle Gala de l'évènement. Organisation d'un gala destiné au réseau national de MIAGE, avec 300 personnes invitées. Travail en équipe de 3 à 4 personnes pour ce pôle.",
   "mc_desc": "Responsable du pôle Événementiel de la Fédération Nationale des Étudiants de MIAGE. Organisation d'événements nationaux en collaboration avec les organisation locales.",
-  "current_job":"Chef de projets Informatiques"
+  "telechargerCv": "Télécharger mon CV"
 }

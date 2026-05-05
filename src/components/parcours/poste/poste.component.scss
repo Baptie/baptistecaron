@@ -1,0 +1,47 @@
+@import '../../../variables.scss';
+
+.posteContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: $main-font;
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    width: 100%;
+    border-bottom: 1px solid rgba($light-emerald,0.3);
+    gap:2rem;
+}
+.imgSociete{
+
+}
+.imgSociete img{
+    width: 3rem;
+    height: auto;
+}
+.detailsPoste{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+}
+.poste{
+    color : $emerald;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.societe{
+    font-family: $secondary-font;
+    color : $dark-gray;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.posteDate{
+    width: 35%;
+    font-size: 0.9rem;
+    color: $dark-gray;
+    text-align: end;
+    
+}
+.description{
+    font-style: italic;
+}

@@ -1,27 +1,30 @@
 @import '../../variables.scss';
-
 .presentation{
-    min-height: 100vh;
-    padding: 3rem;
-    font-family: $main-font;
-    font-weight: 400;
-    font-size:1.25rem
-}
-.presentationContent{
-    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 2rem;
-
+    justify-content: space-evenly;
+  
 
 }
-.volleyAsset{
-    width: 25%;
-    @media screen and (max-width :600px) {
-        width: 60%;
-    }
+.presentationContent{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.texteSection{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.5rem;
+}
+
+.texteSection p{
+    font-family: $main-font;
+    font-size:1rem;
+    font-weight: 400;
 }
 .diplomeContainer{
     display: flex;
@@ -32,7 +35,25 @@
     margin-inline: 3rem;
 
 }
+.profilPicture{
+    width: 11rem;
+    height: auto;
+    border-radius: 4px;
+    border-left: 0.5rem solid $emerald;
+   
+}
+.buttonDownloadCV{
+    background-color: $white;
+    border: 1px solid $black;
+    border-radius: 5px;
+    height: 2.5rem;
+    padding-inline: 0.7rem;
+}
+.buttonDownloadCV:hover{
+    color : $blue;
+    border: 2px solid $blue;
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: ease-in-out 0.2s;
 
-.labelCurrentJob{
-    font-weight: bold ;
 }

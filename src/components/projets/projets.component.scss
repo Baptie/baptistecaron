@@ -1,0 +1,87 @@
+@import '../../variables.scss';
+
+.projets{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    gap:7rem;
+    
+}
+/* Grille de base */
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+  }
+  
+  /* --- L'Animation de Déroulement --- */
+  .expand-wrapper {
+    display: grid;
+    grid-template-rows: 0fr; /* État fermé */
+    transition: grid-template-rows 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .expand-wrapper.is-open {
+    grid-template-rows: 1fr; /* État ouvert */
+    opacity: 1;
+    visibility: visible;
+    margin-top: 5rem;
+  }
+  
+  .expand-content {
+    overflow: hidden; /* Empêche le contenu de dépasser pendant l'anim */
+  }
+  
+  /* --- Le Bouton et la Flèche (+ / -) --- */
+  .btn-toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: $light-emerald;
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 0.8em;
+    padding-bottom: 10px;
+  }
+
+  .btn-toggle:hover{
+    filter:brightness(0.90);
+    transition: ease-in-out 0.3s;
+  }
+  
+  .btn-toggle::after {
+    content: "+"; /* État fermé */
+    margin-left: 10px;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .btn-toggle.active::after {
+    content: "-"; /* État ouvert */
+  }
+
+  /* On crée la ligne invisible au départ */
+.btn-toggle::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px; /* Épaisseur du soulignement */
+    background-color: currentColor; /* Utilise la couleur du texte */
+    /* Animation de départ : largeur 0, centrée ou à gauche */
+    transform: scaleX(0);
+    transform-origin: bottom right; /* La ligne se replie vers la droite à la sortie */
+    transition: transform 0.3s ease;
+  }
+  
+  /* Effet au survol */
+  .btn-toggle:hover::before {
+    transform: scaleX(1); /* La ligne prend toute sa largeur */
+    transform-origin: bottom left; /* La ligne part de la gauche vers la droite */
+  }

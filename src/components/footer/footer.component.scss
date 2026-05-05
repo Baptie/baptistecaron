@@ -1,11 +1,11 @@
 @import '../../variables.scss';
 
 .footerContent{
-    height: 30vh;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $taupe;
+    background-color: $dark-emerald;
     border: none;
 
 }
@@ -18,11 +18,12 @@
 }
 .lienReseau{
     :hover{
-        filter: brightness(0.85);
+        filter: brightness(0.75);
     }
 }
 .copyright{
     font-family: $main-font;
     margin-top: 1rem;
+    color: white;
 
 }

@@ -1,0 +1,56 @@
+{
+  "projets": [
+    {
+      "nom": "SI RH",
+      "description": "Interlocuteur privilégié RH pour l'ensemble des sujets IT.",
+      "tags": [
+        "AMOA",
+        "SIRH"
+      ],
+      "img_url": "/img/RH.png",
+      "img_alt": "placeholder"
+    },
+    {
+      "nom": "SI Décisionnel RH",
+      "description": "Création complète d'un SI décisionnel pour le service RH.",
+      "tags": [
+        "SIRH",
+        "Scrum",
+        "Data"
+      ],
+      "img_url": "/img/data.png",
+      "img_alt": "placeholder"
+    },
+    {
+      "nom": "Obsolescence SharePoint",
+      "description": "Migration de la plateforme et redéfinition de la politique documentaire.",
+      "tags": [
+        "Appel d'offres",
+        "Change Management",
+        "Migration"
+      ],
+      "img_url": "/img/server.png",
+      "img_alt": "placeholder"
+    },
+    {
+      "nom": "Gestion des PND",
+      "description": "Dématérialisation des Plis Non Distribuables pour les caisses régionales du Groupe CA.",
+      "tags": [
+        "Change Management",
+        "Editique"
+      ],
+      "img_url": "/img/lettre.png",
+      "img_alt": "placeholder"
+    },
+    {
+      "nom": "Supervision (Dynatrace)",
+      "description": "Mise en place d'un outil de supervision pour les applications du service.",
+      "tags": [
+        "Supervision",
+        "Processus"
+      ],
+      "img_url": "/img/metriques.png",
+      "img_alt": "placeholder"
+    }
+  ]
+}
