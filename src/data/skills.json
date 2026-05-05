@@ -6,15 +6,11 @@
             "skills":[
                 {
                     "name":"Java",
-                    "level":"Expérimenté"
+                    "level":"Intermédiaire"
                 },
                 {
                     "name":"Spring Boot",
-                    "level":"Expérimenté"
-                },
-                {
-                    "name":"Spring Batch",
-                    "level":"Débutant"
+                    "level":"Intermédiaire"
                 },
                 {
                     "name":"SQL",
@@ -40,19 +36,10 @@
                 },
                 {
                     "name":"Jira",
-                    "level":"Intermédiaire"
+                    "level":"Confirmé"
                 },
                 {
-                    "name":"Visual Studio Code",
-                    "level":"Intermédiaire"
-                }
-                ,
-                {
-                    "name":"IntelliJ",
-                    "level":"Expérimenté"
-                },
-                {
-                    "name":"Eclipse",
+                    "name":"Confluence",
                     "level":"Intermédiaire"
                 }
             ]
@@ -62,10 +49,10 @@
             "skills":[
                 {
                     "name":"Gestion de projet",
-                    "level":"Débutant"
+                    "level":"Intermédiaire"
                 },
                 {
-                    "name":"Rédaction de spécifications",
+                    "name":"Gestion de planning",
                     "level":"Intermédiaire"
                 },
                 {
@@ -73,7 +60,7 @@
                     "level":"Débutant"
                 },
                 {
-                    "name":"Définition & Expression du besoin",
+                    "name":"Gestion budgétaire",
                     "level":"Intermédiaire"
                 }
             ]
