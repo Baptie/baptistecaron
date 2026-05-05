@@ -90,3 +90,82 @@
     box-shadow: none;
     box-shadow: 0 0 10px 1px rgba($light-emerald, 0.5);
 }
+.contactModalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000; /* Plus haut que la navbar ! */
+    backdrop-filter: blur(8px);
+  }
+  
+  .contactModalContent {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    text-align: center;
+    animation: slideUp 0.4s ease-out;
+  
+    h2 {
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+    }
+  
+    .contactLinks {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 30px;
+  
+      .contactItem {
+        padding: 15px;
+        background: #f4f4f4;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        transition: all 0.3s ease;
+  
+        &:hover {
+          background: #e0e0e0;
+          transform: translateY(-3px);
+        }
+      }
+    }
+  }
+  
+  .closeModal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #999;
+    &:hover { color: #333; }
+  }
+  
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .contactItem{
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+justify-content: center;    
+  }
+  .imgContactIcon{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
