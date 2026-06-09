@@ -32,7 +32,6 @@ const Projet: React.FC<ProjetProp> = (prop: ProjetProp) => {
       </div>
 
       <div className="projetNom">{prop.nom}</div>
-      <div className="projetDescription">{prop.description}</div>
 
       {/* Le bouton déclencheur */}
       <button className="moreButton" onClick={toggleModal}>
@@ -51,10 +50,21 @@ const Projet: React.FC<ProjetProp> = (prop: ProjetProp) => {
             <img src={prop.img_url} alt={prop.img_alt} className="modalImg" />
 
             <div className="modalDetails">
-              <h3>Détails du projet</h3>
+              <div className="tagsModal">
+                {prop.tags.map((tag, index) => (
+                  <div key={index} className="compItem">
+                    {tag}
+                  </div>
+                ))}
+              </div>
               <p>{prop.description}</p>
-              {/* Ajoute ici d'autres détails : date, lien github, etc. */}
             </div>
+            <a
+              className="contactMeProjets"
+              href="mailto:contact.baptistecaron@gmail.com"
+            >
+              &#x21AA; Me contacter pour en savoir plus
+            </a>
           </div>
         </div>
       )}

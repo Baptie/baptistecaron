@@ -1,17 +1,51 @@
-import { useEffect, useState } from "react"; // Ajout de useState
+import { useEffect, useState } from "react";
 import "./navbar.component.scss";
 
 const Navbar = () => {
   const [isContactOpen, setIsContactOpen] = useState(false);
 
   useEffect(() => {
-    // Ton code de Smooth Scroll existant reste ici...
-    // (Pense juste à vérifier que le bouton Contact n'est pas inclus
-    // dans la boucle smooth scroll s'il n'a pas de href="#id")
+    // Function to handle smooth scrolling
+    function handleSmoothScroll(event: React.MouseEvent<HTMLAnchorElement>) {
+      event.preventDefault();
+      const targetId = event.currentTarget.getAttribute("href")?.substring(1);
+      const targetElement = document.getElementById(targetId || "");
+
+      if (targetElement) {
+        const navbarElement = document.querySelector(
+          ".navbarContainer"
+        ) as HTMLElement;
+        const navbarHeight = navbarElement ? navbarElement.offsetHeight : 0;
+
+        window.scrollTo({
+          top: targetElement.offsetTop - navbarHeight,
+          behavior: "smooth",
+        });
+      }
+    }
+
+    // Attach event listeners to navbar links
+    const navbarLinks = document.querySelectorAll(".navbar a");
+    navbarLinks.forEach((link) => {
+      link.addEventListener(
+        "click",
+        handleSmoothScroll as unknown as EventListener
+      );
+    });
+
+    // Clean up event listeners on component unmount
+    return () => {
+      navbarLinks.forEach((link) => {
+        link.removeEventListener(
+          "click",
+          handleSmoothScroll as unknown as EventListener
+        );
+      });
+    };
   }, []);
 
   const toggleContact = (e: React.MouseEvent) => {
-    e.preventDefault(); // Empêche la redirection vers "/"
+    e.preventDefault();
     setIsContactOpen(!isContactOpen);
   };
 
@@ -22,14 +56,16 @@ const Navbar = () => {
         <a className="itemNavbar" href="#accueil">
           Accueil
         </a>
-        <a className="itemNavbar" href="#presentation">
-          Informations
-        </a>
+
         <a className="itemNavbar" href="#projets">
           Porfolio
         </a>
         <a className="itemNavbar" href="#parcours">
           Parcours
+        </a>
+
+        <a className="itemNavbar" href="#presentation">
+          Informations
         </a>
 
         {/* On change le href et on ajoute le onClick */}
@@ -53,7 +89,10 @@ const Navbar = () => {
             <p>Un projet ? Une question ? N'hésitez pas à me joindre :</p>
 
             <div className="contactLinks">
-              <a href="mailto:ton-email@exemple.com" className="contactItem">
+              <a
+                href="mailto:contact.baptistecaron@gmail.com"
+                className="contactItem"
+              >
                 <img
                   src="/img/applemail_logo.png"
                   alt="Logo LinkedIn"

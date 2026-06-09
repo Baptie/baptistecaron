@@ -1,18 +1,11 @@
 @import '../../variables.scss';
-.presentation{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  
-
-}
 .presentationContent{
     display: flex;
     align-self: center;
     justify-content: center;
     align-items: center;
     gap: 5rem;
+    padding-inline:12rem;
 }
 .texteSection{
     display: flex;
@@ -38,8 +31,7 @@
 .profilPicture{
     width: 11rem;
     height: auto;
-    border-radius: 4px;
-    border-left: 0.5rem solid $emerald;
+    border-radius: 100%;
    
 }
 .buttonDownloadCV{

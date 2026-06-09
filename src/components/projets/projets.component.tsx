@@ -14,10 +14,9 @@ const Projets = () => {
   const remainingProjects = projects.slice(3);
 
   return (
-    <section id="projets" className="projets">
+    <section id="projets" className="projetsSection">
       <SectionTitleComponent titre="Mes projets récents" sub="Cas d'étude" />
       <div className="projects-container">
-        {/* 1. Les 3 premiers projets (Toujours visibles) */}
         <div className="projects-grid">
           {featuredProjects.map((projet) => (
             <Projet

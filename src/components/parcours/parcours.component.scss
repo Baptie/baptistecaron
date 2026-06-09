@@ -1,14 +1,11 @@
 @import '../../variables.scss';
 
 .parcours{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    justify-content: space-evenly;
 }
 .parcoursContainer{
     display: flex;
     gap: 5rem;
-    justify-content: space-between;
     padding-inline: 4rem;
 }
 .parcoursPro, .parcoursAsso{
