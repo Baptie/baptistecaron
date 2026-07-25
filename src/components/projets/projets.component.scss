@@ -1,87 +1,141 @@
 @import '../../variables.scss';
 
-.projets{
+.projetsSection{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    gap:7rem;
-    
+    min-width: 0; /* évite que le contenu intrinsèque (max-content) du carousel n'agrandisse la section */
+    --projects-speed: 50s;
 }
-/* Grille de base */
-.projects-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5rem;
-  }
-  
-  /* --- L'Animation de Déroulement --- */
-  .expand-wrapper {
-    display: grid;
-    grid-template-rows: 0fr; /* État fermé */
-    transition: grid-template-rows 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
-    opacity: 0;
-    visibility: hidden;
-  }
-  
-  .expand-wrapper.is-open {
-    grid-template-rows: 1fr; /* État ouvert */
-    opacity: 1;
-    visibility: visible;
-    margin-top: 5rem;
-  }
-  
-  .expand-content {
-    overflow: hidden; /* Empêche le contenu de dépasser pendant l'anim */
-  }
-  
-  /* --- Le Bouton et la Flèche (+ / -) --- */
-  .btn-toggle {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    color: $light-emerald;
-    background: none;
-    border: none;
-    font-weight: bold;
-    font-size: 0.8em;
-    padding-bottom: 10px;
-  }
 
-  .btn-toggle:hover{
-    filter:brightness(0.90);
-    transition: ease-in-out 0.3s;
-  }
-  
-  .btn-toggle::after {
-    content: "+"; /* État fermé */
-    margin-left: 10px;
-    font-size: 1.2rem;
-    transition: transform 0.3s ease;
-  }
-  
-  .btn-toggle.active::after {
-    content: "-"; /* État ouvert */
-  }
-
-  /* On crée la ligne invisible au départ */
-.btn-toggle::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
+/* --- Carousel auto-défilant (desktop uniquement) --- */
+.projects-carousel{
     width: 100%;
-    height: 1px; /* Épaisseur du soulignement */
-    background-color: currentColor; /* Utilise la couleur du texte */
-    /* Animation de départ : largeur 0, centrée ou à gauche */
-    transform: scaleX(0);
-    transform-origin: bottom right; /* La ligne se replie vers la droite à la sortie */
-    transition: transform 0.3s ease;
-  }
-  
-  /* Effet au survol */
-  .btn-toggle:hover::before {
-    transform: scaleX(1); /* La ligne prend toute sa largeur */
-    transform-origin: bottom left; /* La ligne part de la gauche vers la droite */
-  }
+    overflow: hidden;
+    /* marge verticale pour que l'agrandissement/tilt au survol ne soit pas rogné en haut/bas */
+    padding-block: 2rem;
+    margin-block: -2rem;
+    -webkit-mask-image: linear-gradient(90deg, #0000, #fff 10%, #fff 90%, #0000);
+            mask-image: linear-gradient(90deg, #0000, #fff 10%, #fff 90%, #0000);
+
+    @media screen and (max-width: $bp-mobile){
+        display: none;
+    }
+}
+
+.projects-track{
+    display: flex;
+    align-items: stretch;
+    width: max-content;
+    gap: 5rem;
+    will-change: transform;
+    animation: projetsScroll var(--projects-speed) linear infinite;
+}
+
+.projects-carousel:hover .projects-track{
+    animation-play-state: paused;
+}
+
+.carousel-card{
+    display: flex;
+    flex: 0 0 auto;
+    width: 17rem;
+}
+
+.carousel-card .projetContainer{
+    width: 100%;
+}
+
+@keyframes projetsScroll{
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* la liste est dupliquée => -50% suffit */
+}
+
+@media (prefers-reduced-motion: reduce){
+    .projects-track{ animation: none; }
+}
+
+/* --- Barre de progression (desktop uniquement) --- */
+.projects-progress{
+    width: min(100%, 30rem);
+    height: 4px;
+    margin-top: 2.5rem;
+    border-radius: 2px;
+    background-color: rgba($dark-gray, 0.25);
+    overflow: hidden;
+
+    @media screen and (max-width: $bp-mobile){
+        display: none;
+    }
+}
+
+.projects-progress-fill{
+    height: 100%;
+    width: 0%;
+    background-color: $light-emerald;
+    animation: projetsProgress var(--projects-speed) linear infinite;
+}
+
+.projects-carousel:hover ~ .projects-progress .projects-progress-fill{
+    animation-play-state: paused;
+}
+
+@keyframes projetsProgress{
+    0%   { width: 0%; }
+    100% { width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce){
+    .projects-progress-fill{ animation: none; width: 100%; }
+}
+
+/* --- Swipe manuel (mobile uniquement) --- */
+.projects-swipe{
+    display: none;
+
+    @media screen and (max-width: $bp-mobile){
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        gap: 1.25rem;
+        padding-inline: 1.25rem;
+        padding-block: 1rem;
+        margin-inline: -1.25rem;
+        width: calc(100% + 2.5rem);
+
+        &::-webkit-scrollbar{ display: none; }
+
+        .carousel-card{
+            scroll-snap-align: center;
+            width: 80vw;
+            max-width: 19rem;
+        }
+    }
+}
+
+.projects-dots{
+    display: none;
+
+    @media screen and (max-width: $bp-mobile){
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-top: 1.25rem;
+    }
+}
+
+.projects-dot{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba($dark-gray, 0.4);
+    transition: background 0.2s ease, transform 0.2s ease;
+
+    &.active{
+        background: $light-emerald;
+        transform: scale(1.4);
+    }
+}

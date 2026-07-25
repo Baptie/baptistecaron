@@ -5,9 +5,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: $dark-emerald;
     border: none;
+    margin-top: 50vh;
 
+    @media screen and (max-width: $bp-mobile){
+        height: auto;
+        padding-block: 1.5rem;
+        margin-top: 4rem;
+    }
 }
 
 .iconeReseau{

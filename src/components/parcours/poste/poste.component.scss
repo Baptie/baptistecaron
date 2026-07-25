@@ -10,24 +10,38 @@
     width: 100%;
     border-bottom: 1px solid rgba($light-emerald,0.3);
     gap:2rem;
-}
-.imgSociete{
 
+    @media screen and (max-width: $bp-mobile){
+        gap: 0.85rem;
+        padding-inline: 0;
+    }
 }
 .imgSociete img{
     width: 3rem;
     height: auto;
+
+    @media screen and (max-width: $bp-mobile){
+        width: 2.25rem;
+    }
 }
 .detailsPoste{
     display: flex;
     flex-direction: column;
     width: 60%;
 
+    @media screen and (max-width: $bp-mobile){
+        width: auto;
+        flex: 1;
+    }
 }
 .poste{
     color : $emerald;
     font-size: 1.1rem;
     font-weight: 600;
+
+    @media screen and (max-width: $bp-mobile){
+        font-size: 1rem;
+    }
 }
 .societe{
     font-family: $secondary-font;
@@ -40,7 +54,12 @@
     font-size: 0.9rem;
     color: $dark-gray;
     text-align: end;
-    
+
+    @media screen and (max-width: $bp-mobile){
+        width: auto;
+        flex: 0 0 auto;
+        font-size: 0.75rem;
+    }
 }
 .description{
     font-style: italic;

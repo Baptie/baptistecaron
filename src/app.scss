@@ -16,15 +16,31 @@ body{
 }
 
 .appContent{   
-    @media screen and (max-width :300px) {
-        display: none ;
-    }
     justify-self: end;
     width: 100%;
+    flex-direction: column;
     
 }
 section{
-    min-height: 75vh;
+    min-height: 80vh;
     margin-block: 2.5rem;
     padding-inline: 4rem;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media screen and (max-width: $bp-mobile){
+        padding-inline: 1.25rem;
+        margin-block: 1.5rem;
+        min-height: auto;
+    }
 }
+
+.appContent{
+    @media screen and (max-width: $bp-mobile){
+        /* laisse la place à la bottom tab bar fixe pour ne pas recouvrir le footer */
+        padding-bottom: calc(4.5rem + env(safe-area-inset-bottom));
+    }
+}
+

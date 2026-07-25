@@ -3,7 +3,6 @@ import SectionTitleComponent from "../shared/sectionTitle/sectionTitle.component
 import "./about.component.scss";
 import photoBaptie from "../../assets/baptie/baptie-volley.jpg";
 import Carousel from "../shared/carousel/carousel.component";
-import angular from "../../assets/techs/angular.png";
 import react from "../../assets/techs/react.png";
 import java from "../../assets/techs/java.png";
 import html from "../../assets/techs/html.png";
@@ -17,7 +16,10 @@ import confluence from "../../assets/techs/confluence.png";
 const About = () => {
   return (
     <section id="presentation" className="presentation">
-      <SectionTitleComponent titre={t("a_propos_libelle")} />
+      <SectionTitleComponent
+        titre={t("a_propos_libelle")}
+        sub="En savoir plus"
+      />
       <div className="presentationContent">
         <div className="profilPictureContainer">
           <img src={photoBaptie} alt="" className="profilPicture" />

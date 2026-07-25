@@ -5,8 +5,10 @@
     justify-content: center;
 }
 .projetContainer{
-    width: 20%;
+    position: relative;
+    box-sizing: border-box;
     padding: 0.5rem;
+    border: 2px solid transparent;
     box-shadow: 5px 5px 20px 5px rgba($light-emerald,0.2);
     display: flex;
     flex-direction: column;
@@ -14,6 +16,28 @@
     row-gap: 1rem;
     justify-content: space-between;
     margin-bottom: 1rem;
+    transition: box-shadow 0.25s ease, border-color 0.25s ease, transform 0.1s ease-out;
+}
+
+@media (hover: hover) and (pointer: fine){
+    .projetContainer:hover{
+        border-width: 1px;
+        border-color: rgba($emerald,0.6);
+        z-index: 2;
+    }
+}
+
+.cardGlare{
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+    transition: opacity 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce){
+    .projetContainer{ transform: none !important; transition: box-shadow 0.25s ease, border-color 0.25s ease; }
+    .cardGlare{ display: none; }
 }
 
 
@@ -21,9 +45,7 @@
     font-size: 1.3rem;
     font-weight: 600;
     color: $emerald;
-}
-.projetDescription{
-
+    text-align: center;
 }
 .projetTags{
     position: absolute;
@@ -55,7 +77,8 @@
 .imgProjet img{
     display: block;
     width: 100%;
-    height: 100%;
+    height: 20vh;
+    object-fit: cover;
     
 }
 
@@ -83,55 +106,243 @@
 /* L'arrière-plan sombre */
 .modalOverlay {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.7); /* Effet de flou ou assombrissement */
+    inset: 0;
+    background: rgba(3, 15, 12, 0.75);
     display: flex;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
     z-index: 1000; /* Doit être au-dessus de tout */
-    backdrop-filter: blur(5px); /* Optionnel : floute l'arrière-plan */
+    backdrop-filter: blur(5px);
+    padding: 24px;
   }
-  
-  /* La boîte de la modale */
-  .modalContent {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    max-width: 600px;
-    width: 90%;
+
+  /* --- La fiche projet, style "dossier" --- */
+  .projetCard {
     position: relative;
+    width: 100%;
+    max-width: 640px;
+    max-height: 88vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    background: $dark-emerald;
+    border: 1px solid rgba($light-emerald, 0.35);
+    border-radius: 6px;
+    padding: 44px 40px 36px 76px;
     animation: fadeIn 0.3s ease-out;
-  
-    h2 {
-      margin-bottom: 20px;
-      color: #333;
-    }
-  
-    .modalImg {
-      width: 100%;
-      border-radius: 8px;
-      margin-bottom: 20px;
+    background-image: radial-gradient(rgba($light-emerald, 0.1) 1px, transparent 1px);
+    background-size: 16px 16px;
+  }
+
+  /* Onglet dossier, signature visuelle */
+  .projetTab {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 36px;
+    background: $emerald;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      font-family: $secondary-font;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: $paper;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      white-space: nowrap;
     }
   }
-  
+
   /* Bouton fermer */
   .closeModal {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    background: none;
-    border: none;
-    font-size: 2rem;
+    top: 18px;
+    right: 18px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid rgba($paper, 0.25);
+    color: $paper;
+    font-size: 16px;
+    line-height: 1;
     cursor: pointer;
-    color: #666;
-    &:hover { color: #000; }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover { border-color: $light-emerald; color: $light-emerald; }
   }
-  
+
   @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
+    from { opacity: 0; transform: translateY(14px); }
     to { opacity: 1; transform: translateY(0); }
+  }
+
+  .projetCard{
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: $secondary-font;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: $light-emerald;
+      border: 1px solid rgba($light-emerald, 0.5);
+      border-radius: 20px;
+      padding: 4px 12px;
+      margin-bottom: 18px;
+
+      &::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: $light-emerald;
+      }
+    }
+
+    h1 {
+      font-family: $secondary-font;
+      font-weight: 600;
+      font-size: 26px;
+      color: $paper;
+      margin: 0 0 8px;
+      line-height: 1.2;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 18px;
+      font-size: 13px;
+      color: $paper-dim;
+      margin-bottom: 26px;
+      padding-bottom: 22px;
+      border-bottom: 1px solid rgba($light-emerald, 0.3);
+
+      b { color: $paper; font-weight: 500; }
+    }
+
+    .section {
+      margin-bottom: 26px;
+      &:last-of-type { margin-bottom: 0; }
+    }
+
+    .eyebrow {
+      font-family: $secondary-font;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: $light-emerald;
+      margin: 0 0 10px;
+    }
+
+    .bodyText {
+      font-size: 14.5px;
+      line-height: 1.6;
+      color: $paper-dim;
+      margin: 0;
+    }
+
+    .actionsList {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+
+      li {
+        font-size: 14.5px;
+        line-height: 1.5;
+        color: $paper-dim;
+        padding-left: 18px;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 7px;
+          width: 7px;
+          height: 1px;
+          background: $light-emerald;
+        }
+
+        b { color: $paper; font-weight: 500; }
+      }
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .metric {
+      background: rgba($light-emerald, 0.1);
+      border: 1px solid rgba($light-emerald, 0.3);
+      border-radius: 4px;
+      padding: 14px 12px;
+
+      .num {
+        font-family: $secondary-font;
+        font-size: 22px;
+        font-weight: 600;
+        color: $paper;
+        display: block;
+        margin-bottom: 2px;
+      }
+
+      .lbl {
+        font-size: 11.5px;
+        color: $light-emerald;
+      }
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .chip {
+      font-family: $secondary-font;
+      font-size: 12px;
+      font-weight: 500;
+      color: $light-emerald;
+      border: 1px solid rgba($light-emerald, 0.45);
+      border-radius: 3px;
+      padding: 5px 11px;
+    }
+  }
+
+  @media (max-width: 520px){
+    .projetCard{ padding: 40px 22px 28px 60px; }
+    .projetCard .metrics{ grid-template-columns: 1fr 1fr; }
+  }
+
+  .contactMeProjets{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    color: $paper-dim;
+    font-family: $secondary-font;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 30px;
+    transition: color 0.2s ease;
+
+    &:hover { color: $light-emerald; }
   }
 

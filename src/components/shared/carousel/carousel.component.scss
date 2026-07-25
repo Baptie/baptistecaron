@@ -18,6 +18,10 @@
           mask-image: linear-gradient(90deg, #0000, #fff 15%, #fff 85%, #0000);
    width: 50%;
    align-self: center;
+
+   @media screen and (max-width: 1024px){
+       width: 90%;
+   }
 }
 
 .carousel-inner{
@@ -27,11 +31,6 @@
     width: max-content;               /* s’adapte au contenu */
     will-change: transform;
     animation: scroll var(--speed) linear infinite;
-}
-
-.carousel-item{
-
-    
 }
 
 @keyframes scroll{
