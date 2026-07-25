@@ -1,60 +1,69 @@
+import { useRef, useState } from "react";
 import SectionTitleComponent from "../shared/sectionTitle/sectionTitle.component";
 import "./projets.component.scss";
 import projets from "../../data/projets.json";
 import Projet from "./projet/projet.component";
-import { useState } from "react";
 
 const Projets = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const recentProjects = projets.projets.slice(-6);
+  const track = [...recentProjects, ...recentProjects];
 
-  const projects = projets.projets;
+  const [activeCard, setActiveCard] = useState(0);
+  const swipeTrackRef = useRef<HTMLDivElement>(null);
+  const scrollFrame = useRef<number | null>(null);
 
-  // Séparation de la liste
-  const featuredProjects = projects.slice(0, 3);
-  const remainingProjects = projects.slice(3);
+  const handleSwipeScroll = () => {
+    if (scrollFrame.current) cancelAnimationFrame(scrollFrame.current);
+    scrollFrame.current = requestAnimationFrame(() => {
+      const el = swipeTrackRef.current;
+      if (!el || el.children.length < 1) return;
+      const first = el.children[0] as HTMLElement;
+      const second = el.children[1] as HTMLElement | undefined;
+      const step = second ? second.offsetLeft - first.offsetLeft : first.clientWidth;
+      if (step <= 0) return;
+      const index = Math.round(el.scrollLeft / step);
+      setActiveCard(Math.min(recentProjects.length - 1, Math.max(0, index)));
+    });
+  };
 
   return (
     <section id="projets" className="projetsSection">
       <SectionTitleComponent titre="Mes projets récents" sub="Cas d'étude" />
-      <div className="projects-container">
-        <div className="projects-grid">
-          {featuredProjects.map((projet) => (
-            <Projet
-              nom={projet.nom}
-              description={projet.description}
-              tags={projet.tags}
-              img_url={projet.img_url}
-              img_alt={projet.img_alt}
-            />
+
+      {/* --- Desktop : défilement automatique en boucle --- */}
+      <div className="projects-carousel">
+        <div className="projects-track">
+          {track.map((projet, index) => (
+            <div className="carousel-card" key={`${projet.id}-${index}`}>
+              <Projet {...projet} />
+            </div>
           ))}
         </div>
-
-        {/* 2. Le reste des projets (Animé) */}
-        <div className={`expand-wrapper ${isOpen ? "is-open" : ""}`}>
-          <div className="expand-content">
-            <div className="projects-grid secondary">
-              {remainingProjects.map((projet) => (
-                <Projet
-                  nom={projet.nom}
-                  description={projet.description}
-                  tags={projet.tags}
-                  img_url={projet.img_url}
-                  img_alt={projet.img_alt}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
       </div>
-      {/* 3. Bouton de contrôle */}
-      {projects.length > 3 && (
-        <button
-          className={`btn-toggle ${isOpen ? "active" : ""}`}
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? "Voir moins" : "Voir tous mes projets"}
-        </button>
-      )}
+      <div className="projects-progress">
+        <div className="projects-progress-fill"></div>
+      </div>
+
+      {/* --- Mobile : swipe manuel + pagination --- */}
+      <div
+        className="projects-swipe"
+        ref={swipeTrackRef}
+        onScroll={handleSwipeScroll}
+      >
+        {recentProjects.map((projet) => (
+          <div className="carousel-card" key={projet.id}>
+            <Projet {...projet} />
+          </div>
+        ))}
+      </div>
+      <div className="projects-dots">
+        {recentProjects.map((projet, index) => (
+          <span
+            key={projet.id}
+            className={`projects-dot${index === activeCard ? " active" : ""}`}
+          />
+        ))}
+      </div>
     </section>
   );
 };
