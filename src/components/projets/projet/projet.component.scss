@@ -111,7 +111,8 @@
     display: flex;
     gap: 1rem;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    overflow-y: auto;
     z-index: 1000; /* Doit être au-dessus de tout */
     backdrop-filter: blur(5px);
     padding: 24px;
@@ -122,8 +123,7 @@
     position: relative;
     width: 100%;
     max-width: 640px;
-    max-height: 88vh;
-    overflow-y: auto;
+    margin-block: auto;
     box-sizing: border-box;
     background: $dark-emerald;
     border: 1px solid rgba($light-emerald, 0.35);
