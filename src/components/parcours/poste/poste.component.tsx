@@ -14,7 +14,6 @@ interface PosteProp {
 }
 
 const Poste: React.FC<PosteProp> = (prop: PosteProp) => {
-  console.log("color : " + prop.color);
   const dynamicStyle = {
     "--accent-color": prop.color,
     "--accent-color2": prop.color2,
@@ -28,7 +27,6 @@ const Poste: React.FC<PosteProp> = (prop: PosteProp) => {
       <div className="detailsPoste">
         <div className="societe">{prop.societe}</div>
         <div className="poste">{prop.poste}</div>
-        <div className="description">{prop.description}</div>
       </div>
       <div className="posteDate">
         {prop.date_debut} - {prop.date_fin}
