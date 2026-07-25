@@ -10,17 +10,25 @@
       ],
       "img_url": "/img/RH.png",
       "img_alt": "placeholder",
-      "status": "À compléter",
-      "role": "À compléter",
-      "periode": "À compléter",
-      "duree": "À compléter",
+      "status": "En cours",
+      "role": "AMOA",
+      "periode": "Août 2026 - Maintenant",
+      "duree": "En cours",
       "actions": [
-        "À compléter — décrire ici 2 à 3 actions clés menées sur ce projet"
+        "Assistance à l'expression de besoin",
+        "Pilotage des projets IT Métier RH",
+        "Interlocuteur Privilégié",
+        "Déploiement d'outil IA"
       ],
       "impact": [
-        { "num": "—", "lbl": "À compléter" },
-        { "num": "—", "lbl": "À compléter" },
-        { "num": "—", "lbl": "À compléter" }
+        {
+          "num": "✓",
+          "lbl": "Facilitation des tâches business"
+        },
+        {
+          "num": "✓",
+          "lbl": "Amélioration des échanges entre IT et Métier"
+        }
       ]
     },
     {
@@ -34,17 +42,24 @@
       ],
       "img_url": "/img/data.png",
       "img_alt": "placeholder",
-      "status": "À compléter",
-      "role": "À compléter",
-      "periode": "À compléter",
-      "duree": "À compléter",
+      "status": "En cours",
+      "role": "Chef de projet, Scrum Master, Product Owner",
+      "periode": "Février 2025 - Maintenant",
+      "duree": "En cours",
       "actions": [
-        "À compléter — décrire ici 2 à 3 actions clés menées sur ce projet"
+        "Construction d'un environnement sécurisé",
+        "Cadrage des besoins",
+        "Pilotage des développements de rapports en agilité"
       ],
       "impact": [
-        { "num": "—", "lbl": "À compléter" },
-        { "num": "—", "lbl": "À compléter" },
-        { "num": "—", "lbl": "À compléter" }
+        {
+          "num": "3",
+          "lbl": "tableaux de bord développés"
+        },
+        {
+          "num": "4",
+          "lbl": "personnes encadrées"
+        }
       ]
     },
     {
@@ -57,17 +72,29 @@
       ],
       "img_url": "/img/server.png",
       "img_alt": "placeholder",
-      "status": "À compléter",
-      "role": "À compléter",
-      "periode": "À compléter",
-      "duree": "À compléter",
+      "status": "Terminé",
+      "role": "Chef de projet",
+      "periode": "Janvier 2024 - Septembre 2025",
+      "duree": "1 an et 8 mois",
       "actions": [
-        "À compléter — décrire ici 2 à 3 actions clés menées sur ce projet"
+        "Audit de la solution et benchmarking",
+        "Rédaction d'une étude en collaboration avec un prestataire",
+        "Appel d'offre (étude puis mise en œuvre)",
+        "Pilotage côté \"client\""
       ],
       "impact": [
-        { "num": "—", "lbl": "À compléter" },
-        { "num": "—", "lbl": "À compléter" },
-        { "num": "—", "lbl": "À compléter" }
+        {
+          "num": "1 300",
+          "lbl": "collaborateurs impactés (intranet)"
+        },
+        {
+          "num": "4 To",
+          "lbl": "de données migrées"
+        },
+        {
+          "num": "7 M",
+          "lbl": "fichiers concernés"
+        }
       ]
     },
     {
@@ -81,17 +108,24 @@
       ],
       "img_url": "/img/gouv_doc.avif",
       "img_alt": "placeholder",
-      "status": "À compléter",
-      "role": "À compléter",
-      "periode": "À compléter",
-      "duree": "À compléter",
+      "status": "Terminé",
+      "role": "Chef de projet",
+      "periode": "Janvier 2025 - Juillet 2026",
+      "duree": "1 an et 6 mois",
       "actions": [
-        "À compléter — décrire ici 2 à 3 actions clés menées sur ce projet"
+        "Audit des processus de gestion documentaire",
+        "Animation d'ateliers avec l'ensemble des métiers de l'entreprise",
+        "Proposition d'une politique documentaire complète avec plan d'action et kit méthodologique"
       ],
       "impact": [
-        { "num": "—", "lbl": "À compléter" },
-        { "num": "—", "lbl": "À compléter" },
-        { "num": "—", "lbl": "À compléter" }
+        {
+          "num": "7",
+          "lbl": "ateliers menés"
+        },
+        {
+          "num": "23",
+          "lbl": "services consultés"
+        }
       ]
     },
     {
@@ -104,17 +138,22 @@
       ],
       "img_url": "/img/lettre.png",
       "img_alt": "placeholder",
-      "status": "À compléter",
-      "role": "À compléter",
-      "periode": "À compléter",
-      "duree": "À compléter",
+      "status": "Terminé",
+      "role": "Chef de projet",
+      "periode": "Août 2025 - Mai 2026",
+      "duree": "9 mois",
       "actions": [
-        "À compléter — décrire ici 2 à 3 actions clés menées sur ce projet"
+        "Pilotage de prestataire"
       ],
       "impact": [
-        { "num": "—", "lbl": "À compléter" },
-        { "num": "—", "lbl": "À compléter" },
-        { "num": "—", "lbl": "À compléter" }
+        {
+          "num": "40",
+          "lbl": "clients mandants impactés"
+        },
+        {
+          "num": "1 500",
+          "lbl": "plis reçus par mois"
+        }
       ]
     },
     {
@@ -127,17 +166,18 @@
       ],
       "img_url": "/img/metriques.png",
       "img_alt": "placeholder",
-      "status": "À compléter",
-      "role": "À compléter",
-      "periode": "À compléter",
-      "duree": "À compléter",
+      "status": "Terminé",
+      "role": "Chef de projet",
+      "periode": "Février 2026 - Juin 2026",
+      "duree": "4 mois",
       "actions": [
-        "À compléter — décrire ici 2 à 3 actions clés menées sur ce projet"
+        "Pilotage des actions"
       ],
       "impact": [
-        { "num": "—", "lbl": "À compléter" },
-        { "num": "—", "lbl": "À compléter" },
-        { "num": "—", "lbl": "À compléter" }
+        {
+          "num": "13",
+          "lbl": "applications supervisées"
+        }
       ]
     }
   ]
