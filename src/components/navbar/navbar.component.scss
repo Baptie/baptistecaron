@@ -15,17 +15,63 @@
 
 }
 .navbar{
-    @media screen and (max-width :1024px) {
+    @media screen and (max-width: $bp-mobile) {
         display: none;
     }
     display: flex;
     justify-content: center;
     column-gap: 2rem;
     right: 1rem;
-    @media screen {
-        
-    }
+}
 
+/* --- Barre d'onglets mobile, style application native --- */
+.bottomNav{
+    display: none;
+
+    @media screen and (max-width: $bp-mobile){
+        display: flex;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 500;
+        justify-content: space-around;
+        align-items: stretch;
+        background: rgba($white, 0.92);
+        backdrop-filter: blur(10px);
+        border-top: 1px solid rgba($dark-gray, 0.2);
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+}
+
+.bottomNavItem{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.15rem;
+    padding-block: 0.5rem;
+    background: none;
+    border: none;
+    color: $dark-gray;
+    font-family: $secondary-font;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+
+    svg{ transition: transform 0.15s ease; }
+
+    &:active svg{ transform: scale(0.88); }
+
+    &.active{
+        color: $emerald;
+    }
+}
+
+.bottomNavContact{
+    color: $light-emerald;
 }
 .itemNavbar{
    display: flex;
@@ -51,10 +97,13 @@
 
 .logoNavbar{
     padding-left: 3rem;
+    @media screen and (max-width: $bp-mobile) {
+      display: none;
+  }
 
 }
 
-.title, .navbar{
+.navbar{
     padding-inline: 1.2rem;
 }
 
@@ -87,85 +136,44 @@
     transition: ease-in-out 0.2s;
     transform: scale(0.98);
     cursor:pointer;
-    box-shadow: none;
     box-shadow: 0 0 10px 1px rgba($light-emerald, 0.5);
 }
-.contactModalOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
+/* --- Modale de contact : réutilise le style "dossier" de la popup projet
+   (.modalOverlay / .projetCard / .projetTab / .closeModal / .status / .section
+   / .eyebrow / .bodyText sont définis dans projet.component.scss) --- */
+.contactCard{
+    max-width: 420px;
+}
+
+.contactLinks{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2000; /* Plus haut que la navbar ! */
-    backdrop-filter: blur(8px);
-  }
-  
-  .contactModalContent {
-    background: white;
-    padding: 40px;
-    border-radius: 20px;
-    width: 90%;
-    max-width: 450px;
-    position: relative;
-    text-align: center;
-    animation: slideUp 0.4s ease-out;
-  
-    h2 {
-      margin-bottom: 10px;
-      font-size: 1.8rem;
-    }
-  
-    .contactLinks {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      margin-top: 30px;
-  
-      .contactItem {
-        padding: 15px;
-        background: #f4f4f4;
-        border-radius: 10px;
-        text-decoration: none;
-        color: #333;
-        font-weight: 500;
-        transition: all 0.3s ease;
-  
-        &:hover {
-          background: #e0e0e0;
-          transform: translateY(-3px);
-        }
-      }
-    }
-  }
-  
-  .closeModal {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #999;
-    &:hover { color: #333; }
-  }
-  
-  @keyframes slideUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  .contactItem{
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.contactItem{
     display: flex;
-    gap: 1rem;
-    text-align: center;
     align-items: center;
-justify-content: center;    
-  }
-  .imgContactIcon{
+    gap: 0.75rem;
+    padding: 12px 16px;
+    background: rgba($light-emerald, 0.1);
+    border: 1px solid rgba($light-emerald, 0.3);
+    border-radius: 6px;
+    color: $paper-dim;
+    font-family: $secondary-font;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+
+    &:hover{
+        background: rgba($light-emerald, 0.18);
+        border-color: rgba($light-emerald, 0.5);
+        transform: translateY(-2px);
+    }
+}
+
+.imgContactIcon{
     width: 1.5rem;
     height: 1.5rem;
-  }
+    border-radius: 4px;
+}
