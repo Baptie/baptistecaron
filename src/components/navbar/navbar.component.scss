@@ -108,27 +108,25 @@
 }
 
 .contactButton{
-    color: $white;
-    background: $emerald;
-    background-image: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.2) 0%, 
-    rgba(255, 255, 255, 0) 50%,   
-    rgba(0, 0, 0, 0.05) 100% 
-    );
-
-    border-radius: 2rem;
+    color: $paper;
+    background-color: $emerald;
+    border-radius: 8px;
 
     font-family: $main-font;
     font-weight: 600;
     text-decoration: none;
 
-    padding-inline: 1rem;
+    padding: 0.45rem 1.1rem;
     display: flex;
     align-items: center;
 
-    box-shadow: 0 0 10px 1px rgba($light-emerald, 0.7);
-  
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.contactButton:hover{
+    background-color: $dark-emerald;
+    transform: translateY(-1px);
+    cursor: pointer;
 }
 
 .contactButton:hover{

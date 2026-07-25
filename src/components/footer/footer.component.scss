@@ -7,6 +7,8 @@
     align-items: center;
     justify-content: center;
     background-color: $dark-emerald;
+    background-image: radial-gradient(rgba($light-emerald, 0.12) 1px, transparent 1px);
+    background-size: 16px 16px;
     border: none;
     margin-top: 50vh;
 
