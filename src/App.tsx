@@ -11,11 +11,11 @@ import Parcours from "./components/parcours/parcours.component";
 function App() {
   return (
     <div className="app">
-      <div className="appNavbar sectionWIP">
+      <div className="appNavbar">
         <Navbar />
       </div>
 
-      <div className="appContent sectionWIP">
+      <div className="appContent">
         <div className="coverSection">
           <Cover />
         </div>
@@ -35,11 +35,6 @@ function App() {
         <div className="footer">
           <Footer />
         </div>
-      </div>
-
-      <div className="wip">
-        <img src="/img/wip.png" alt="" />
-        <p>Version mobile en construction ...</p>
       </div>
     </div>
   );

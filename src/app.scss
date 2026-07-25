@@ -29,28 +29,18 @@ section{
     gap: 3rem;
     flex-direction: column;
     justify-content: space-between;
+
+    @media screen and (max-width: $bp-mobile){
+        padding-inline: 1.25rem;
+        margin-block: 1.5rem;
+        min-height: auto;
+    }
 }
 
-.wip{
-    @media screen and (max-width :1024px){
-        display: flex;
-    }
-    @media screen and (min-width :1024px){
-        display: none;
-    }
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    img{
-        width: 80%;
-        
-
-    }
-}
-.sectionWIP{
-    @media screen and (max-width :1024px){
-        display: none;
+.appContent{
+    @media screen and (max-width: $bp-mobile){
+        /* laisse la place à la bottom tab bar fixe pour ne pas recouvrir le footer */
+        padding-bottom: calc(4.5rem + env(safe-area-inset-bottom));
     }
 }
 

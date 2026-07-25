@@ -6,12 +6,23 @@
     align-items: center;
     gap: 5rem;
     padding-inline:12rem;
+
+    @media screen and (max-width: $bp-mobile){
+        flex-direction: column;
+        gap: 1.75rem;
+        padding-inline: 0;
+        text-align: center;
+    }
 }
 .texteSection{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     line-height: 1.5rem;
+
+    @media screen and (max-width: $bp-mobile){
+        align-items: center;
+    }
 }
 
 .texteSection p{
@@ -32,7 +43,10 @@
     width: 11rem;
     height: auto;
     border-radius: 100%;
-   
+
+    @media screen and (max-width: $bp-mobile){
+        width: 8.5rem;
+    }
 }
 .buttonDownloadCV{
     background-color: $white;
